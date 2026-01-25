@@ -3,17 +3,12 @@
 # This file is covered by the GNU General Public License
 # See the file COPYING for more details
 
-from nvdaBuiltin.appModules.zoom import *
-import appModuleHandler
+from nvdaBuiltin.appModules.zoom import AppModule
 import eventHandler
 import tones
 from scriptHandler import script
 import ui
-from logHandler import log
 import config
-import api
-import mouseHandler
-import winUser
 import addonHandler
 from .dialogs import SettingsPanel, ChatHistoryDialog
 from .regexs import *
