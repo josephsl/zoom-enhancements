@@ -10,7 +10,7 @@ from scriptHandler import script
 import ui
 import config
 import addonHandler
-from .dialogs import SettingsPanel, ChatHistoryDialog
+from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
 from . import regexs
 import datetime
 import gui
@@ -80,8 +80,8 @@ class AppModule(CoreAppModule):
 			"nameChange", processId=self.processID, windowClassName="zBubbleBaseClass")
 		initConfiguration()
 		categoryClasses = gui.settingsDialogs.NVDASettingsDialog.categoryClasses
-		if SettingsPanel not in categoryClasses:
-			categoryClasses.append(SettingsPanel)
+		if ZoomEnhancementsSettingsPanel not in categoryClasses:
+			categoryClasses.append(ZoomEnhancementsSettingsPanel)
 		self.chatHistoryDialog = None
 		self.chatHistoryList = []
 		self.ricievedChatPrefix = False
@@ -90,7 +90,7 @@ class AppModule(CoreAppModule):
 	def terminate(self):
 		super().terminate()
 		try:
-			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(SettingsPanel)
+			gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(ZoomEnhancementsSettingsPanel)
 		except ValueError:
 			pass
 
@@ -429,7 +429,7 @@ class AppModule(CoreAppModule):
 		gesture="kb:NVDA+z"
 	)
 	def script_showSettingsDialog(self, gesture):
-		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, SettingsPanel)
+		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, ZoomEnhancementsSettingsPanel)
 
 	@script(
 		# Translators: a description for a command to show chat history dialog
