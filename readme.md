@@ -6,7 +6,7 @@ This add-on improves the experience of using Zoom for NVDA users by providing ke
 
 ## Keyboard shortcuts for controlling alerts in meetings 
 
-* NVDA+Shift+A: cycles between alerts reporting modes. The following modes are available:
+* NVDA+Ctrl+Shift+A: cycles between alerts reporting modes. The following modes are available:
 	* Report all alerts mode where all alerts are reported as usual
 	* Beep for alerts where NVDA will play a short beep for every alert displayed in Zoom
 	* Silence all alerts where NVDA will ignore all alerts
