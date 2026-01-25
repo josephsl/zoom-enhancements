@@ -17,6 +17,8 @@ addonHandler.initTranslation()
 class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 	# Translators: Title for the settings dialog
 	title = _("Zoom Enhancements")
+	# Translators: description for the settings dialog
+	panelDescription = _("Configures Zoom Enhancements add-on settings for the Zoom web conference tool.")
 
 	def makeSettings(self, settingsSizer):
 		settingsSizerHelper = guiHelper.BoxSizerHelper(
