@@ -89,8 +89,10 @@ class AppModule(CoreAppModule):
 
     def terminate(self):
         super().terminate()
-        gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(
-            SettingsPanel)
+        try:
+            gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(SettingsPanel)
+        except ValueError:
+            pass
 
     def event_alert(self, obj, nextHandler):
         if regexs.publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or regexs.privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
