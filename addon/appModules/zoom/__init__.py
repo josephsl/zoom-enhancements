@@ -402,7 +402,7 @@ class AppModule(CoreAppModule):
 	@script(
 		# Translators: a description for a command to cycle between alerts reporting modes
 		description=_("Toggles between reporting alerts as usual, beeping for the alert, silencing alerts completely, or custom mode where the user can choose which alerts are reported and which aren't."),
-		gesture="kb:NVDA+Shift+a"
+		gesture="kb:NVDA+Control+Shift+a"
 	)
 	def script_toggleAlertsMode(self, gesture):
 		currentModeLabel = config.conf["zoomEnhancements"]["alertsReportingMode"]
