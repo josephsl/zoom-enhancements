@@ -11,7 +11,7 @@ import ui
 import config
 import addonHandler
 from .dialogs import SettingsPanel, ChatHistoryDialog
-from .regexs import *
+from . import regexs
 import datetime
 import gui
 from gui import NVDASettingsDialog
@@ -93,7 +93,7 @@ class AppModule(AppModule):
             SettingsPanel)
 
     def event_alert(self, obj, nextHandler):
-        if publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
+        if regexs.publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or regexs.privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
             self._handleChatMessage(obj.name)
         if config.conf["zoomEnhancements"]["alertsReportingMode"] == "Report all alerts":
             nextHandler()
@@ -104,51 +104,51 @@ class AppModule(AppModule):
         if config.conf["zoomEnhancements"]["alertsReportingMode"] == "Silence all alerts":
             return
         alert = obj.name
-        if publicInMeetingChatReceivedRegEx.fullmatch(alert):
+        if regexs.publicInMeetingChatReceivedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]:
                 nextHandler()
             return
-        elif privateInMeetingChatReceivedRegEx.fullmatch(alert):
+        elif regexs.privateInMeetingChatReceivedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"]:
                 nextHandler()
             return
-        elif joinedLeftMeetingRegEx.fullmatch(alert):
+        elif regexs.joinedLeftMeetingRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"]:
                 nextHandler()
             return
-        elif joinedLeftWaitingRoomRegEx.fullmatch(alert):
+        elif regexs.joinedLeftWaitingRoomRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"]:
                 nextHandler()
             return
-        elif audioMutedByHostRegEx.fullmatch(alert):
+        elif regexs.audioMutedByHostRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["AudioMutedByHost"]:
                 nextHandler()
             return
-        elif videoStoppedByHostRegEx.fullmatch(alert):
+        elif regexs.videoStoppedByHostRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["VideoStoppedByHost"]:
                 nextHandler()
             return
-        elif screenSharingStartedStoppedByParticipantRegEx.fullmatch(alert):
+        elif regexs.screenSharingStartedStoppedByParticipantRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"]:
                 nextHandler()
             return
-        elif recordingPermissionGrantedRevokedRegEx.fullmatch(alert):
+        elif regexs.recordingPermissionGrantedRevokedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"]:
                 nextHandler()
             return
-        elif inMeetingFileUploadCompletedRegEx.fullmatch(alert):
+        elif regexs.inMeetingFileUploadCompletedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"]:
                 nextHandler()
             return
-        elif hostPrivilegeGrantedRevokedRegEx.fullmatch(alert):
+        elif regexs.hostPrivilegeGrantedRevokedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"]:
                 nextHandler()
             return
-        elif raisedLoweredHandRegEx.fullmatch(alert):
+        elif regexs.raisedLoweredHandRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"]:
                 nextHandler()
             return
-        elif iMChatReceivedRegEx.fullmatch(alert):
+        elif regexs.iMChatReceivedRegEx.fullmatch(alert):
             if config.conf["zoomEnhancements"]["IMChatReceived"]:
                 nextHandler()
             return
@@ -162,7 +162,7 @@ class AppModule(AppModule):
                 obj.name = self.chatPrefixText + ": " + obj.name
                 self.ricievedChatPrefix = False
                 self.chatPrefixText = ""
-            elif inMeetingChatReceivedPrefixRegEx.fullmatch(obj.name):
+            elif regexs.inMeetingChatReceivedPrefixRegEx.fullmatch(obj.name):
                 self.chatPrefixText = obj.name
                 self.ricievedChatPrefix = True
                 return
