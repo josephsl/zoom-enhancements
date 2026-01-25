@@ -80,7 +80,7 @@ class AppModule(AppModule):
             "nameChange", processId=self.processID, windowClassName="zBubbleBaseClass")
         initConfiguration()
         categoryClasses = gui.settingsDialogs.NVDASettingsDialog.categoryClasses
-        if not (SettingsPanel in categoryClasses):
+        if SettingsPanel not in categoryClasses:
             categoryClasses.append(SettingsPanel)
         self.chatHistoryDialog = None
         self.chatHistoryList = []
