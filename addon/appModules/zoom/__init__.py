@@ -429,7 +429,7 @@ class AppModule(CoreAppModule):
 		gesture="kb:NVDA+z"
 	)
 	def script_showSettingsDialog(self, gesture):
-		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, SettingsPanel)
+		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, SettingsPanel)
 
 	@script(
 		# Translators: a description for a command to show chat history dialog
