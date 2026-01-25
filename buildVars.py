@@ -24,7 +24,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""An add-on which aims to enhance the experience while using Zoom and NVDA"""),
 	# version
-	"addon_version" : "1.2",
+	"addon_version" : "1.3",
 	# Author(s)
 	"addon_author" : u"Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
 	# URL for the add-on documentation support
