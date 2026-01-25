@@ -3,7 +3,7 @@
 # This file is covered by the GNU General Public License
 # See the file COPYING for more details
 
-from nvdaBuiltin.appModules.zoom import AppModule
+from nvdaBuiltin.appModules.zoom import AppModule as CoreAppModule
 import eventHandler
 import tones
 from scriptHandler import script
@@ -72,7 +72,7 @@ offLabel = _("off")
 onLable = _("on")
 
 
-class AppModule(AppModule):
+class AppModule(CoreAppModule):
 
     def __init__(self, processID, appName):
         super(AppModule, self).__init__(processID, appName)
