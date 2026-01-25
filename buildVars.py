@@ -26,7 +26,10 @@ addon_info = AddonInfo(
 	addon_version="1.3",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""Initial changelog"""),
+	addon_changelog=_("""* NVDA 2024.1 or later is required.
+* In NVDA settings, renamed "Zoom Enhancement settings" to "Zoom Enhancements".
+* In add-on settings, individual alert report announcement checkboxes are now grouped under a checkable list.
+* Cleaned up add-on source code using Ruff and Pyright."""),
 	# Author(s)
 	addon_author="Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
 	# URL for the add-on documentation support
