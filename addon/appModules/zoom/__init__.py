@@ -92,14 +92,17 @@ class AppModule(CoreAppModule):
 	def event_alert(self, obj, nextHandler):
 		if regexs.publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or regexs.privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
 			self._handleChatMessage(obj.name)
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] == "Report all alerts":
-			nextHandler()
-			return
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] == "Beep for alerts":
-			tones.beep(1000, 50)
-			return
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] == "Silence all alerts":
-			return
+		match config.conf["zoomEnhancements"]["alertsReportingMode"]:
+			case "Report all alerts":
+				nextHandler()
+				return
+			case "Beep for alerts":
+				tones.beep(1000, 50)
+				return
+			case "Silence all alerts":
+				return
+			case _:
+				pass
 		alert = obj.name
 		if regexs.publicInMeetingChatReceivedRegEx.fullmatch(alert):
 			if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]:
