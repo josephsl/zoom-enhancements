@@ -75,7 +75,7 @@ onLable = _("on")
 class AppModule(CoreAppModule):
 
     def __init__(self, processID, appName):
-        super(AppModule, self).__init__(processID, appName)
+        super().__init__(processID, appName)
         eventHandler.requestEvents(
             "nameChange", processId=self.processID, windowClassName="zBubbleBaseClass")
         initConfiguration()
@@ -88,7 +88,7 @@ class AppModule(CoreAppModule):
         self.chatPrefixText = ""
 
     def terminate(self):
-        super(AppModule, self).terminate()
+        super().terminate()
         gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(
             SettingsPanel)
 
