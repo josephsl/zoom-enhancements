@@ -5,7 +5,7 @@
 
 import gui
 from gui import guiHelper
-from gui.nvdaControls import DPIScaledDialog
+from gui.nvdaControls import DPIScaledDialog, CustomCheckListBox
 import wx
 import config
 import addonHandler
@@ -27,103 +27,69 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 		modeChoices = [item[1] for item in alertModeToLabel.items()]
 		self.alertsReportingMode = settingsSizerHelper.addLabeledControl(
 			# Translators: the label of the combobox in the settings dialog
-			_("&Alerts reporting mode"), wx.Choice, choices=modeChoices)
+			_("&Alerts reporting mode:"), wx.Choice, choices=modeChoices)
 		currentModeLabel = config.conf["zoomEnhancements"]["alertsReportingMode"]
 		currentMode = 0
 		for item in alertModeToLabel.items():
 			if (item[1] == currentModeLabel):
 				currentMode = item[0]
 		self.alertsReportingMode.SetSelection(currentMode)
-		alertsGroupText = _(
-			# Translators: the text of the grouping in the settings dialog
-			"Choose which alerts should be reported (effective only when custom mode is selected)")
-		alertsGroup = guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(
-			wx.StaticBox(self, label=alertsGroupText), wx.VERTICAL))
-		settingsSizerHelper.addItem(alertsGroup)
-		self.ParticipantHasJoinedLeftMeetingCheckbox = wx.CheckBox(
+
+		alertsReportingOptions = (
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Participant Has Joined/Left Meeting"))
-		self.ParticipantHasJoinedLeftMeetingCheckbox.SetValue(
-			config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"])
-		alertsGroup.addItem(
-			self.ParticipantHasJoinedLeftMeetingCheckbox)
-		self.ParticipantHasJoinedLeftWaitingRoomCheckBox = wx.CheckBox(
+			_("Participant Has Joined/Left Meeting"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Participant Has Joined/Left Waiting Room"))
-		self.ParticipantHasJoinedLeftWaitingRoomCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"])
-		alertsGroup.addItem(
-			self.ParticipantHasJoinedLeftWaitingRoomCheckBox)
-		self.AudioMutedByHostCheckBox = wx.CheckBox(
+			_("Participant Has Joined/Left Waiting Room"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Audio Muted by Host"))
-		self.AudioMutedByHostCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["AudioMutedByHost"])
-		alertsGroup.addItem(self.AudioMutedByHostCheckBox)
-		self.VideoStoppedByHostCheckBox = wx.CheckBox(
+			_("Audio Muted by Host"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Video Stopped by Host"))
-		self.VideoStoppedByHostCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["VideoStoppedByHost"])
-		alertsGroup.addItem(self.VideoStoppedByHostCheckBox)
-		self.ScreenSharingStartedStoppedByParticipantCheckBox = wx.CheckBox(
+			_("Video Stopped by Host"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Screen Sharing Started/Stopped by a Participant"))
-		self.ScreenSharingStartedStoppedByParticipantCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"])
-		alertsGroup.addItem(
-			self.ScreenSharingStartedStoppedByParticipantCheckBox)
-		self.RecordingPermissionGrantedRevokedCheckBox = wx.CheckBox(
+			_("Screen Sharing Started/Stopped by a Participant"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Recording Permission Granted/Revoked"))
-		self.RecordingPermissionGrantedRevokedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"])
-		alertsGroup.addItem(
-			self.RecordingPermissionGrantedRevokedCheckBox)
-		self.PublicInMeetingChatReceivedCheckBox = wx.CheckBox(
+			_("Recording Permission Granted/Revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Public In-meeting Chat Received"))
-		self.PublicInMeetingChatReceivedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"])
-		alertsGroup.addItem(self.PublicInMeetingChatReceivedCheckBox)
-		self.PrivateInMeetingChatReceivedCheckBox = wx.CheckBox(
+			_("Public In-meeting Chat Received"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Private In-meeting Chat Received"))
-		self.PrivateInMeetingChatReceivedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"])
-		alertsGroup.addItem(self.PrivateInMeetingChatReceivedCheckBox)
-		self.InMeetingFileUploadCompletedCheckBox = wx.CheckBox(
+			_("Private In-meeting Chat Received"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("In-meeting File Upload Completed"))
-		self.InMeetingFileUploadCompletedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"])
-		alertsGroup.addItem(self.InMeetingFileUploadCompletedCheckBox)
-		self.HostPrivilegeGrantedRevokedCheckBox = wx.CheckBox(
+			_("In-meeting File Upload Completed"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Host Privilege Granted/Revoked"))
-		self.HostPrivilegeGrantedRevokedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"])
-		alertsGroup.addItem(self.HostPrivilegeGrantedRevokedCheckBox)
-		self.ParticipantHasRaisedLoweredHandCheckBox = wx.CheckBox(
+			_("Host Privilege Granted/Revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Participant Has Raised/Lowered Hand (Host Only)"))
-		self.ParticipantHasRaisedLoweredHandCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"])
-		alertsGroup.addItem(
-			self.ParticipantHasRaisedLoweredHandCheckBox)
-		self.RemoteControlPermissionGrantedRevokedCheckBox = wx.CheckBox(
+			_("Participant Has Raised/Lowered Hand (Host Only)"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("Remote Control Permission Granted/Revoked"))
-		self.RemoteControlPermissionGrantedRevokedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"])
-		alertsGroup.addItem(
-			self.RemoteControlPermissionGrantedRevokedCheckBox)
-		self.IMChatReceivedCheckBox = wx.CheckBox(
+			_("Remote Control Permission Granted/Revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			self, label=_("IM Chat Received"))
-		self.IMChatReceivedCheckBox.SetValue(
-			config.conf["zoomEnhancements"]["IMChatReceived"])
-		alertsGroup.addItem(self.IMChatReceivedCheckBox)
+			_("IM Chat Received"),
+		)
+		alertsReportingValues = (
+			config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"],
+			config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"],
+			config.conf["zoomEnhancements"]["AudioMutedByHost"],
+			config.conf["zoomEnhancements"]["VideoStoppedByHost"],
+			config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"],
+			config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"],
+			config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"],
+			config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"],
+			config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"],
+			config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"],
+			config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"],
+			config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"],
+			config.conf["zoomEnhancements"]["IMChatReceived"],
+		)
+		alertsReportingCheckableListLabel = _(
+			# Translators: the label of the checkable list in the settings dialog
+			"&Choose which alerts should be reported (effective only when custom mode is selected):"
+		)
+		self.alertsReportingCheckableList = settingsSizerHelper.addLabeledControl(
+			alertsReportingCheckableListLabel, CustomCheckListBox, choices=alertsReportingOptions
+		)
+		for pos, setting in enumerate(alertsReportingValues):
+			self.alertsReportingCheckableList.Check(
+				pos, check=setting
+			)
+		self.alertsReportingCheckableList.SetSelection(0)
 
 	def onSave(self):
 		from . import alertModeToLabel
@@ -131,19 +97,20 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 			self.alertsReportingMode.GetSelection()
 		]
 		config.conf["zoomEnhancements"]["alertsReportingMode"] = newMode
-		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = self.ParticipantHasJoinedLeftMeetingCheckbox.IsChecked()
-		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] = self.ParticipantHasJoinedLeftWaitingRoomCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["AudioMutedByHost"] = self.AudioMutedByHostCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["VideoStoppedByHost"] = self.VideoStoppedByHostCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] = self.ScreenSharingStartedStoppedByParticipantCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] = self.RecordingPermissionGrantedRevokedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = self.PublicInMeetingChatReceivedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = self.PrivateInMeetingChatReceivedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = self.InMeetingFileUploadCompletedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = self.HostPrivilegeGrantedRevokedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] = self.ParticipantHasRaisedLoweredHandCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] = self.RemoteControlPermissionGrantedRevokedCheckBox.IsChecked()
-		config.conf["zoomEnhancements"]["IMChatReceived"] = self.IMChatReceivedCheckBox.IsChecked()
+		# Alerts reporting checkable list
+		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = self.alertsReportingCheckableList.IsChecked(0)
+		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] = self.alertsReportingCheckableList.IsChecked(1)
+		config.conf["zoomEnhancements"]["AudioMutedByHost"] = self.alertsReportingCheckableList.IsChecked(2)
+		config.conf["zoomEnhancements"]["VideoStoppedByHost"] = self.alertsReportingCheckableList.IsChecked(3)
+		config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] = self.alertsReportingCheckableList.IsChecked(4)
+		config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] = self.alertsReportingCheckableList.IsChecked(5)
+		config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = self.alertsReportingCheckableList.IsChecked(6)
+		config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = self.alertsReportingCheckableList.IsChecked(7)
+		config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = self.alertsReportingCheckableList.IsChecked(8)
+		config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = self.alertsReportingCheckableList.IsChecked(9)
+		config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] = self.alertsReportingCheckableList.IsChecked(10)
+		config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] = self.alertsReportingCheckableList.IsChecked(11)
+		config.conf["zoomEnhancements"]["IMChatReceived"] = self.alertsReportingCheckableList.IsChecked(12)
 
 
 class ChatHistoryDialog(DPIScaledDialog):
