@@ -5,7 +5,6 @@
 
 import gui
 from gui import guiHelper
-from gui.settingsDialogs import NVDASettingsDialog
 from gui.nvdaControls import DPIScaledDialog
 import wx
 import config
