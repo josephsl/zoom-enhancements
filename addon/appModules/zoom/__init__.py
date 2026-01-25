@@ -15,12 +15,7 @@ from . import regexs
 import datetime
 import gui
 from gui import NVDASettingsDialog
-import controlTypes as ct
-if hasattr(ct, 'Role'):
-	roles = ct.Role
-else:
-	shortRolePairs = [(x.split("ROLE_")[1], getattr(ct, x)) for x in dir(ct) if x.startswith("ROLE_")]
-	roles = type('Enum', (), dict(shortRolePairs))
+import controlTypes
 
 
 def initConfiguration():
@@ -159,7 +154,7 @@ class AppModule(CoreAppModule):
 
 	def event_nameChange(self, obj, nextHandler):
 		nextHandler()
-		if obj.role == roles.STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
+		if obj.role == controlTypes.Role.STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
 			if self.ricievedChatPrefix:
 				obj.name = self.chatPrefixText + ": " + obj.name
 				self.ricievedChatPrefix = False
@@ -168,7 +163,7 @@ class AppModule(CoreAppModule):
 				self.chatPrefixText = obj.name
 				self.ricievedChatPrefix = True
 				return
-			obj.role = roles.ALERT
+			obj.role = controlTypes.Role.ALERT
 			eventHandler.queueEvent("alert", obj)
 
 	scriptCategory = SCRCAT_ZOOMENHANCEMENTS
