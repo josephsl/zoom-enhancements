@@ -15,7 +15,7 @@ import addonHandler
 addonHandler.initTranslation()
 
 
-class SettingsPanel(gui.SettingsPanel):
+class SettingsPanel(gui.settingsDialogs.SettingsPanel):
     # Translators: Title for the settings dialog
     title = _("Zoom Enhancements settings")
 
