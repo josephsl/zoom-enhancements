@@ -27,8 +27,9 @@ addon_info = AddonInfo(
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""* NVDA 2024.1 or later is required.
-* In NVDA settings, renamed "Zoom Enhancement settings" to "Zoom Enhancements".
+* In NVDA settings, renamed 'Zoom Enhancement settings' to 'Zoom Enhancements'.
 * In add-on settings, individual alert report announcement checkboxes are now grouped under a checkable list.
+* Alerts reporting mode toggle command has changed from NVDA+Shift+A to NVDA+Ctrl+Shift+A to avoid conflict with lapotp keyboard layout command for review cursor say all.
 * Cleaned up add-on source code using Ruff and Pyright."""),
 	# Author(s)
 	addon_author="Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
