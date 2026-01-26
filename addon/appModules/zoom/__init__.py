@@ -48,13 +48,13 @@ SCRCAT_ZOOMENHANCEMENTS = _("Zoom Enhancements")
 
 # Alert reporting mode to label dict
 alertModeToLabel = {
-	# Translators: a lable for alerts reporting mode
+	# Translators: a label for alerts reporting mode
 	0: _("Report all alerts"),
-	# Translators: a lable for alerts reporting mode
+	# Translators: a label for alerts reporting mode
 	1: _("Beep for alerts"),
-	# Translators: a lable for alerts reporting mode
+	# Translators: a label for alerts reporting mode
 	2: _("Silence all alerts"),
-	# Translators: a lable for alerts reporting mode
+	# Translators: a label for alerts reporting mode
 	3: _("Custom")
 }
 

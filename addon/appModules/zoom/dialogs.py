@@ -26,7 +26,7 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 		from . import alertModeToLabel
 		modeChoices = [item[1] for item in alertModeToLabel.items()]
 		self.alertsReportingMode = settingsSizerHelper.addLabeledControl(
-			# Translators: the label of the combobox in the settings dialog
+			# Translators: the label of the combo box in the settings dialog
 			_("&Alerts reporting mode:"), wx.Choice, choices=modeChoices)
 		currentModeLabel = config.conf["zoomEnhancements"]["alertsReportingMode"]
 		currentMode = 0
