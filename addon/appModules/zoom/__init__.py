@@ -93,8 +93,7 @@ class AppModule(CoreAppModule):
 			self._handleChatMessage(obj.name)
 		match config.conf["zoomEnhancements"]["alertsReportingMode"]:
 			case "Report all alerts":
-				nextHandler()
-				return
+				return nextHandler()
 			case "Beep for alerts":
 				tones.beep(1000, 50)
 				return
