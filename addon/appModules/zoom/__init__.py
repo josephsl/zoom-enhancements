@@ -79,7 +79,7 @@ class AppModule(CoreAppModule):
 			categoryClasses.append(ZoomEnhancementsSettingsPanel)
 		self.chatHistoryDialog = None
 		self.chatHistoryList = []
-		self.ricievedChatPrefix = False
+		self.receivedChatPrefix = False
 		self.chatPrefixText = ""
 
 	def terminate(self):
@@ -158,13 +158,13 @@ class AppModule(CoreAppModule):
 	def event_nameChange(self, obj, nextHandler):
 		nextHandler()
 		if obj.role == controlTypes.Role.STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
-			if self.ricievedChatPrefix:
+			if self.receivedChatPrefix:
 				obj.name = self.chatPrefixText + ": " + obj.name
-				self.ricievedChatPrefix = False
+				self.receivedChatPrefix = False
 				self.chatPrefixText = ""
 			elif regexs.inMeetingChatReceivedPrefixRegEx.fullmatch(obj.name):
 				self.chatPrefixText = obj.name
-				self.ricievedChatPrefix = True
+				self.receivedChatPrefix = True
 				return
 			obj.role = controlTypes.Role.ALERT
 			eventHandler.queueEvent("alert", obj)
