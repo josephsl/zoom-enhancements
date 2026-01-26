@@ -68,7 +68,6 @@ onLable = _("on")
 
 
 class AppModule(CoreAppModule):
-
 	def __init__(self, processID, appName):
 		super().__init__(processID, appName)
 		eventHandler.requestEvents(
