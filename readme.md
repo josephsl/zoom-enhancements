@@ -4,7 +4,12 @@
 
 This add-on improves the experience of using Zoom for NVDA users by providing keyboard shortcuts to handle alerts for different events while in a meeting, provides an alternative way to view the chat history in a meeting to overcome accessibility issues found sometimes in the native chat view of Zoom, and more...
 
-## Keyboard shortcuts for controlling alerts in meetings 
+Notes:
+
+* You can configure screen reader alerts from Zoom itself (Zoom 5.2.1 and later). If an alert is disabled from Zoom itself, NVDA will not announce them even if alert reporting is enabled from the add-on. More information on configuring screen reader alerts can be found here: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066934.
+* Alerts reporting configured via custom alerts reporting mode is optimized for Zoom interface in English.
+
+## Keyboard shortcuts for controlling alerts in meetings
 
 * NVDA+Ctrl+Shift+A: cycles between alerts reporting modes. The following modes are available:
 	* Report all alerts mode where all alerts are reported as usual
@@ -30,7 +35,7 @@ The following shortcuts can be used to toggle the announcements of each type of 
 
 Note that you need to leave reporting all alert types selected (in Zoom accessibility settings) to have the add-on function as expected.
 
-## Keyboard shortcut for opening the add-on Dialogue 
+## Keyboard shortcut for opening the add-on Dialog
 
 NVDA+Z opens the add-on dialog. Using this dialog you can :
 
@@ -39,7 +44,7 @@ NVDA+Z opens the add-on dialog. Using this dialog you can :
 * Choose alerts reporting mode
 * Save custom changes 
 
-## Remote control 
+## Remote control
 
 It has been found out that Zoom now has a dedicated keyboard shortcuts to handle the remote control in an accessible manner. Use the following keyboard shortcuts to:
 
@@ -49,7 +54,3 @@ It has been found out that Zoom now has a dedicated keyboard shortcuts to handle
 ## Chat history dialog
 
 The add-on has a custom dialog where you can see all chat messages sent during the meeting while the add-on was running. To open this dialog, use NVDA+Ctrl+h. The dialog shows a list of the sent chat messages with their timestamps also (this works if two or more people were attending a meeting).
-
-## An important note
-
-Currently, the feature of custom alerts mode (where the user can choose which alerts they want to have announced) works with Zoom only when the user interface language is set to English.
