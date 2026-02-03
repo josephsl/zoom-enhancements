@@ -16,9 +16,9 @@ screenSharingStartedStoppedByParticipantRegEx = re.compile(
 	"^.+has (started|stopped) screen share")
 recordingPermissionGrantedRevokedRegEx = re.compile(
 	"Host (dis)?allows you to record this meeting.")
-publicInMeetingChatReceivedRegEx = re.compile("^From .* to Everyone: .*$")
-privateInMeetingChatReceivedRegEx = re.compile("^From .* to Me: .*$")
-inMeetingChatReceivedPrefixRegEx = re.compile("^From .* to (Everyone|Me)$")
+publicInMeetingChatReceivedRegEx = re.compile("^From .* to everyone: .*$")
+privateInMeetingChatReceivedRegEx = re.compile("^From .* to me: .*$")
+inMeetingChatReceivedPrefixRegEx = re.compile("^From .* to (everyone|me)$")
 inMeetingFileUploadCompletedRegEx = re.compile(
 	"File \(.*\) sent successfully.")
 hostPrivilegeGrantedRevokedRegEx = re.compile(
