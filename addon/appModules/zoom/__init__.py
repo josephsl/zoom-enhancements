@@ -391,7 +391,6 @@ class AppModule(CoreAppModule):
 			return
 		config.conf["zoomEnhancements"]["IMChatReceived"] = not config.conf["zoomEnhancements"]["IMChatReceived"]
 		state = onLabel if config.conf["zoomEnhancements"]["IMChatReceived"] else offLabel
-		ui.message(state)
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Report IM chat received %s") % state)
 
