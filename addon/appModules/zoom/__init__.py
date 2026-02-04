@@ -59,6 +59,37 @@ alertModeToLabel = {
 }
 
 
+# Zoom alerts rpeorting settings messages.
+zoomAlertsToggleMessages: dict[str, str] = {
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"ParticipantHasJoined/LeftMeeting": _("participant has joined/left meeting"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"ParticipantHasJoined/LeftWaitingRoom": _("participant has joined/left waiting room"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"AudioMutedByHost": _("audio muted by host"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"VideoStoppedByHost": _("video stopped by host"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"ScreenSharingStarted/StoppedByParticipant": _("screen sharing started/stopped by participant"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"RecordingPermissionGranted/Revoked": _("recording permission granted/revoked"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"PublicIn-meetingChatReceived": _("public in-meeting chat received"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"PrivateIn-meetingChatReceived": _("private in-meeting chat received"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"In-meetingFileUploadCompleted": _("in-meeting file upload completed"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"HostPrivilegeGranted/Revoked": _("host privilege granted/revoked"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"ParticipantHasRaised/LoweredHand": _("participant has raised/lowered hand"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"RemoteControlPermissionGranted/Revoked": _("remote control permission granted/revoked"),
+	# Translators: a message reported for the user when toggling reporting a spicific alert
+	"IMChatReceived": _("IM chat received"),
+}
+
+
 # Translators: the label of the off state for reporting an alert
 offLabel = _("off")
 
