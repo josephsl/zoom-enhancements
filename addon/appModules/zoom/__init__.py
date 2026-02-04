@@ -64,7 +64,7 @@ offLabel = _("off")
 
 
 # Translators: the label of on state for reporting an alert
-onLable = _("on")
+onLabel = _("on")
 
 
 class AppModule(CoreAppModule):
@@ -182,7 +182,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"]
-		state = onLable if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Participant Has Joined/Left Meeting is %s") % state)
@@ -200,7 +200,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"]
-		state = onLable if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Participant Has Joined/Left Waiting Room is %s") % state)
@@ -217,7 +217,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["AudioMutedByHost"] = not config.conf["zoomEnhancements"]["AudioMutedByHost"]
-		state = onLable if config.conf["zoomEnhancements"]["AudioMutedByHost"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["AudioMutedByHost"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting Audio Muted By Host is %s") % state)
 
@@ -234,7 +234,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["VideoStoppedByHost"] = not config.conf["zoomEnhancements"]["VideoStoppedByHost"]
-		state = onLable if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting Video Stopped By Host is %s") % state)
 
@@ -251,7 +251,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] = not config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"]
-		state = onLable if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Screen Sharing Started/Stopped By Participant is %s") % state)
@@ -269,7 +269,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"]
-		state = onLable if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Recording Permission Granted/Revoked is %s") % state)
@@ -287,7 +287,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]
-		state = onLable if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting Public In-meeting Chat Received is %s") % state)
 
@@ -304,7 +304,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"]
-		state = onLable if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting Private In-meeting Chat Received is %s") % state)
 
@@ -321,7 +321,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = not config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"]
-		state = onLable if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting In-meeting File Upload Completed is %s") % state)
 
@@ -338,7 +338,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = not config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"]
-		state = onLable if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting Host Privilege Granted/Revoked is %s") % state)
 
@@ -355,7 +355,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] = not config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"]
-		state = onLable if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Participant Has Raised/Lowered Hand is %s") % state)
@@ -373,7 +373,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"]
-		state = onLable if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
 			_("Reporting Remote Control Permission Granted/Revoked is %s") % state)
@@ -390,7 +390,7 @@ class AppModule(CoreAppModule):
 		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
 			return
 		config.conf["zoomEnhancements"]["IMChatReceived"] = not config.conf["zoomEnhancements"]["IMChatReceived"]
-		state = onLable if config.conf["zoomEnhancements"]["IMChatReceived"] else offLabel
+		state = onLabel if config.conf["zoomEnhancements"]["IMChatReceived"] else offLabel
 		ui.message(state)
 		# Translators: a message reported for the user when toggling reporting a spicific alert
 		ui.message(_("Reporting IM Chat Received is %s") % state)
