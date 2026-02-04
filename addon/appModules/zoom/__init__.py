@@ -185,7 +185,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Participant Has Joined/Left Meeting is %s") % state)
+			_("Report participant has joined/left meeting %s") % state)
 
 	@script(
 		description=_(
@@ -203,7 +203,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Participant Has Joined/Left Waiting Room is %s") % state)
+			_("Report participant has joined/left waiting room %s") % state)
 
 	@script(
 		# Translators: a description for a command to toggle reporting a spicific alert
@@ -219,7 +219,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["AudioMutedByHost"] = not config.conf["zoomEnhancements"]["AudioMutedByHost"]
 		state = onLabel if config.conf["zoomEnhancements"]["AudioMutedByHost"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting Audio Muted By Host is %s") % state)
+		ui.message(_("Report audio muted by host %s") % state)
 
 	@script(
 		description=_(
@@ -236,7 +236,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["VideoStoppedByHost"] = not config.conf["zoomEnhancements"]["VideoStoppedByHost"]
 		state = onLabel if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting Video Stopped By Host is %s") % state)
+		ui.message(_("Report video stopped by host %s") % state)
 
 	@script(
 		description=_(
@@ -254,7 +254,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Screen Sharing Started/Stopped By Participant is %s") % state)
+			_("Report screen sharing started/stopped by participant %s") % state)
 
 	@script(
 		description=_(
@@ -272,7 +272,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Recording Permission Granted/Revoked is %s") % state)
+			_("Report recording permission granted/revoked %s") % state)
 
 	@script(
 		description=_(
@@ -289,7 +289,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]
 		state = onLabel if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting Public In-meeting Chat Received is %s") % state)
+		ui.message(_("Report public in-meeting chat received %s") % state)
 
 	@script(
 		description=_(
@@ -306,7 +306,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"]
 		state = onLabel if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting Private In-meeting Chat Received is %s") % state)
+		ui.message(_("Report private in-meeting chat received %s") % state)
 
 	@script(
 		description=_(
@@ -323,7 +323,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = not config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"]
 		state = onLabel if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting In-meeting File Upload Completed is %s") % state)
+		ui.message(_("Report in-meeting file upload completed %s") % state)
 
 	@script(
 		description=_(
@@ -340,7 +340,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = not config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"]
 		state = onLabel if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else offLabel
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting Host Privilege Granted/Revoked is %s") % state)
+		ui.message(_("Report host privilege granted/revoked %s") % state)
 
 	@script(
 		description=_(
@@ -358,7 +358,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Participant Has Raised/Lowered Hand is %s") % state)
+			_("Report participant has raised/lowered hand %s") % state)
 
 	@script(
 		description=_(
@@ -376,7 +376,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else offLabel
 		ui.message(
 			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Reporting Remote Control Permission Granted/Revoked is %s") % state)
+			_("Report remote control permission granted/revoked %s") % state)
 
 	@script(
 		# Translators: a description for a command to toggle reporting a spicific alert
@@ -393,7 +393,7 @@ class AppModule(CoreAppModule):
 		state = onLabel if config.conf["zoomEnhancements"]["IMChatReceived"] else offLabel
 		ui.message(state)
 		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Reporting IM Chat Received is %s") % state)
+		ui.message(_("Report IM chat received %s") % state)
 
 	@script(
 		# Translators: a description for a command to cycle between alerts reporting modes

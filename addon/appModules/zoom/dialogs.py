@@ -37,31 +37,31 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 
 		alertsReportingOptions = (
 			# Translators: a label of a checkbox in the settings dialog
-			_("Participant Has Joined/Left Meeting"),
+			_("participant has joined/left meeting"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Participant Has Joined/Left Waiting Room"),
+			_("participant has joined/left waiting room"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Audio Muted by Host"),
+			_("audio muted by host"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Video Stopped by Host"),
+			_("video stopped by host"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Screen Sharing Started/Stopped by a Participant"),
+			_("screen sharing started/stopped by a participant"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Recording Permission Granted/Revoked"),
+			_("recording permission granted/revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Public In-meeting Chat Received"),
+			_("public in-meeting chat received"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Private In-meeting Chat Received"),
+			_("private in-meeting chat received"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("In-meeting File Upload Completed"),
+			_("in-meeting file upload completed"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Host Privilege Granted/Revoked"),
+			_("host privilege granted/revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Participant Has Raised/Lowered Hand (Host Only)"),
+			_("participant has raised/lowered hand (host only)"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("Remote Control Permission Granted/Revoked"),
+			_("remote control permission granted/revoked"),
 			# Translators: a label of a checkbox in the settings dialog
-			_("IM Chat Received"),
+			_("IM chat received"),
 		)
 		alertsReportingValues = (
 			config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"],
