@@ -224,13 +224,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_participantJoinedLeftMeeting(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"]
-		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report participant has joined/left meeting %s") % state)
+		self.zoomAlertsSettingsChange("ParticipantHasJoined/LeftMeeting")
 
 	@script(
 		description=_(
@@ -242,13 +236,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_participantJoinedLeftWaitingRoom(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"]
-		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report participant has joined/left waiting room %s") % state)
+		self.zoomAlertsSettingsChange("ParticipantHasJoined/LeftWaitingRoom")
 
 	@script(
 		# Translators: a description for a command to toggle reporting a spicific alert
@@ -259,12 +247,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_audioMutedByHost(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["AudioMutedByHost"] = not config.conf["zoomEnhancements"]["AudioMutedByHost"]
-		state = onLabel if config.conf["zoomEnhancements"]["AudioMutedByHost"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report audio muted by host %s") % state)
+		self.zoomAlertsSettingsChange("AudioMutedByHost")
 
 	@script(
 		description=_(
@@ -276,12 +259,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_videoStoppedByHost(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["VideoStoppedByHost"] = not config.conf["zoomEnhancements"]["VideoStoppedByHost"]
-		state = onLabel if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report video stopped by host %s") % state)
+		self.zoomAlertsSettingsChange("VideoStoppedByHost")
 
 	@script(
 		description=_(
@@ -293,13 +271,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_screenSharingStartedStopped(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] = not config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"]
-		state = onLabel if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report screen sharing started/stopped by participant %s") % state)
+		self.zoomAlertsSettingsChange("ScreenSharingStarted/StoppedByParticipant")
 
 	@script(
 		description=_(
@@ -311,13 +283,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_recordingPermissionGrantedRevoked(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"]
-		state = onLabel if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report recording permission granted/revoked %s") % state)
+		self.zoomAlertsSettingsChange("RecordingPermissionGranted/Revoked")
 
 	@script(
 		description=_(
@@ -329,12 +295,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_publicInMeetingChatReceived(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]
-		state = onLabel if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report public in-meeting chat received %s") % state)
+		self.zoomAlertsSettingsChange("PublicIn-meetingChatReceived")
 
 	@script(
 		description=_(
@@ -346,12 +307,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_privateInMeetingChatReceived(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"]
-		state = onLabel if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report private in-meeting chat received %s") % state)
+		self.zoomAlertsSettingsChange("PrivateIn-meetingChatReceived")
 
 	@script(
 		description=_(
@@ -363,12 +319,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_inMeetingFileUploadCompleted(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = not config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"]
-		state = onLabel if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report in-meeting file upload completed %s") % state)
+		self.zoomAlertsSettingsChange("In-meetingFileUploadCompleted")
 
 	@script(
 		description=_(
@@ -380,12 +331,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_hostPrivilegeGrantedRevoked(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = not config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"]
-		state = onLabel if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report host privilege granted/revoked %s") % state)
+		self.zoomAlertsSettingsChange("HostPrivilegeGranted/Revoked")
 
 	@script(
 		description=_(
@@ -397,13 +343,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_participantRaisedLoweredHand(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] = not config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"]
-		state = onLabel if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report participant has raised/lowered hand %s") % state)
+		self.zoomAlertsSettingsChange("ParticipantHasRaised/LoweredHand")
 
 	@script(
 		description=_(
@@ -415,13 +355,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_remoteControlPermissionGrantedRevoked(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"]
-		state = onLabel if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else offLabel
-		ui.message(
-			# Translators: a message reported for the user when toggling reporting a spicific alert
-			_("Report remote control permission granted/revoked %s") % state)
+		self.zoomAlertsSettingsChange("RemoteControlPermissionGranted/Revoked")
 
 	@script(
 		# Translators: a description for a command to toggle reporting a spicific alert
@@ -432,12 +366,7 @@ class AppModule(CoreAppModule):
 		]
 	)
 	def script_iMChatReceived(self, gesture):
-		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
-			return
-		config.conf["zoomEnhancements"]["IMChatReceived"] = not config.conf["zoomEnhancements"]["IMChatReceived"]
-		state = onLabel if config.conf["zoomEnhancements"]["IMChatReceived"] else offLabel
-		# Translators: a message reported for the user when toggling reporting a spicific alert
-		ui.message(_("Report IM chat received %s") % state)
+		self.zoomAlertsSettingsChange("IMChatReceived")
 
 	@script(
 		# Translators: a description for a command to cycle between alerts reporting modes
