@@ -26,11 +26,9 @@ addon_info = AddonInfo(
 	addon_version="26.01",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* NVDA 2024.1 or later is required.
-* In NVDA settings, renamed 'Zoom Enhancement settings' to 'Zoom Enhancements'.
-* In add-on settings, individual alert report announcement checkboxes are now grouped under a checkable list.
-* Alerts reporting mode toggle command has changed from NVDA+Shift+A to NVDA+Ctrl+Shift+A to avoid conflict with laptop keyboard layout command for review cursor say all.
-* Cleaned up add-on source code using Ruff and Pyright."""),
+	addon_changelog=_("""* Changed messages reported when toggling Zoom alerts reporting settings in custom alerts reporting mode.
+* NVDA will no longer announce public and private chats if alerts for these are disabled from the add-on settings.
+* NVDA will once again show public and private chat messages in the chat history list."""),
 	# Author(s)
 	addon_author="Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
 	# URL for the add-on documentation support
