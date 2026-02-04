@@ -200,6 +200,20 @@ class AppModule(CoreAppModule):
 
 	scriptCategory = SCRCAT_ZOOMENHANCEMENTS
 
+	# Report custom alert reporting option changes.
+	def zoomAlertsSettingsChange(self, setting: str):
+		# Do nothing if alert reporting mode is not "custom".
+		if config.conf["zoomEnhancements"]["alertsReportingMode"] != "Custom":
+			return
+		config.conf["zoomEnhancements"][setting] = not config.conf["zoomEnhancements"][setting]
+		state = config.conf["zoomEnhancements"][setting]
+		ui.message(
+			# Translators: a message reported for the user when toggling reporting Zoom alerts
+			_("Report {zoomAlert} {alertSetting}").format(
+				zoomAlert=zoomAlertsToggleMessages[setting], alertSetting=onLabel if state else offLabel
+			)
+		)
+
 	@script(
 		description=_(
 			# Translators: a description for a command to toggle reporting a spicific alert
