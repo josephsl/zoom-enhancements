@@ -30,11 +30,11 @@ addon_info = AddonInfo(
 * NVDA will no longer announce public and private chats if alerts for these are disabled from the add-on settings.
 * NVDA will once again show public and private chat messages in the chat history list."""),
 	# Author(s)
-	addon_author="Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
+	addon_author="Joseph Lee <joseph.lee22590@gmail.com> (formerly Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>)",
 	# URL for the add-on documentation support
-	addon_url="https://github.com/mohammad-suliman/zoom-enhancements",
+	addon_url="https://github.com/josephsl/zoom-enhancements",
 	# URL for the add-on repository where the source code can be found
-	addon_sourceURL="https://github.com/mohammad-suliman/zoom-enhancements",
+	addon_sourceURL="https://github.com/josephsl/zoom-enhancements",
 	# Documentation file name
 	addon_docFileName="readme.html",
 	# Minimum NVDA version supported (e.g. "2019.3.0", minor version is optional)
