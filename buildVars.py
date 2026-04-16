@@ -26,9 +26,7 @@ addon_info = AddonInfo(
 	addon_version="26.02",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Changed messages reported when toggling Zoom alerts reporting settings in custom alerts reporting mode.
-* NVDA will no longer announce public and private chats if alerts for these are disabled from the add-on settings.
-* NVDA will once again show public and private chat messages in the chat history list."""),
+	addon_changelog=_("""* NVDA 2025.3.3 or later is required."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com> (formerly Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>)",
 	# URL for the add-on documentation support
