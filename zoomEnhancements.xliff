@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/josephsl/zoom-enhancements/9694e73a603eaff8037d1306533f28190c881f36/readme.md">
+<skeleton>
+# $(ID:9b75ae3c-27ff-4bcb-9c8b-3efb8db5ea06)
+
+* $(ID:59666c29-6d5a-40eb-8c65-d522a6c2eba6)
+
+$(ID:8b09c7cc-52cc-4ce3-a4dd-b20cd5bb3869)
+
+$(ID:be9ba6ce-1fbd-43fe-97b6-9b2de73f0f31)
+
+* $(ID:eb21ffd9-19bc-43e4-87e5-841a1512483a)
+* $(ID:697da691-b14d-42d1-a458-59f8212f355a)
+
+## $(ID:182056aa-7c03-441d-915e-64dc820aad30)
+
+* $(ID:c77fb68f-b981-4728-978e-4368b522e31b)
+	* $(ID:76c1e701-970e-4650-95de-739a9049ac41)
+	* $(ID:e5861db9-c2c1-4896-80a4-40ae9e20778b)
+	* $(ID:c41495d4-3420-4a06-be82-f95ef1ebdf0e)
+	* $(ID:21a6bd46-fd7a-4170-9486-206607a486e8)
+
+$(ID:c32e9de4-c88d-4fbd-a828-a9782e4a429f)
+
+* $(ID:ddaf770a-d58e-44b6-b4e0-58b4986c00ff)
+* $(ID:bf3a515a-821e-44fd-b847-b02e8ad0e639)
+* $(ID:594f4ca5-33ac-4d79-a1f7-012be8f83a0f)
+* $(ID:0bd0d855-fe87-41b6-a57e-a2f44b980bf5)
+* $(ID:70d10867-4e38-4e29-9ed1-d7013e6fc986)
+* $(ID:cecc87c4-0f4b-4c37-85fb-06ce34bf5667)
+* $(ID:657fc593-21e5-499e-b5ed-3770ae523789)
+* $(ID:12a2ac08-184c-4b06-bab5-f77249289ed7)
+* $(ID:b881327a-f592-4b40-99c2-fb717b0d948d)
+* $(ID:1b655614-e2fa-49b6-ae9f-41758d7ebc23)
+* $(ID:ded9f0db-15a2-40bf-9f62-eb29a48e3a13)
+* $(ID:7a41be59-5158-4f9c-93e7-8a82bde980fd)
+* $(ID:fb42345c-fa42-47c5-b76f-8d6502771a93)
+
+$(ID:8eb1c44e-051d-4eae-a622-f37483983452)
+
+## $(ID:f53f1632-8ced-4c2c-afe7-81aeb6cd2cef)
+
+$(ID:f6a4f7bb-a48d-4ef4-95ee-4d37979b6874)
+
+* $(ID:d5268f04-e9bb-4015-9c42-fac424a51456)
+* $(ID:4b192e96-4f5e-4b1d-872d-48a04894fe9e)
+* $(ID:3eedeb51-0324-4712-a456-bde6c9750b9c)
+* $(ID:4c165866-cead-4b8a-9092-471c1ef4dcdc)
+
+## $(ID:e0a309e0-9034-4c26-8b68-c49be0fac53a)
+
+$(ID:25ada287-78e2-4d58-b864-6358871e326c)
+
+* $(ID:1628fddd-6619-4eeb-81c8-8bd1ac378ba3)
+* $(ID:b539fb13-460a-41d7-abf3-1f984d0dd9a2)
+
+## $(ID:26e6d688-3c9d-4fdd-b708-f7d7f83febd3)
+
+$(ID:830c4995-361c-4543-8e1d-218fe5f4d372)
+
+</skeleton>
+<unit id="9b75ae3c-27ff-4bcb-9c8b-3efb8db5ea06">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>Zoom Accessibility Enhancements add-on for NVDA</source>
+</segment>
+</unit>
+<unit id="59666c29-6d5a-40eb-8c65-d522a6c2eba6">
+<notes>
+<note appliesTo="source">line: 4</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Authors: Mohamad Suliman, Eilana Benish</source>
+</segment>
+</unit>
+<unit id="8b09c7cc-52cc-4ce3-a4dd-b20cd5bb3869">
+<notes>
+<note appliesTo="source">line: 6</note>
+</notes>
+<segment>
+<source>This add-on improves the experience of using Zoom for NVDA users by providing keyboard shortcuts to handle alerts for different events while in a meeting, provides an alternative way to view the chat history in a meeting to overcome accessibility issues found sometimes in the native chat view of Zoom, and more...</source>
+</segment>
+</unit>
+<unit id="be9ba6ce-1fbd-43fe-97b6-9b2de73f0f31">
+<notes>
+<note appliesTo="source">line: 8</note>
+</notes>
+<segment>
+<source>Notes:</source>
+</segment>
+</unit>
+<unit id="eb21ffd9-19bc-43e4-87e5-841a1512483a">
+<notes>
+<note appliesTo="source">line: 10</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>You can configure screen reader alerts from Zoom itself (Zoom 5.2.1 and later). If an alert is disabled from Zoom itself, NVDA will not announce them even if alert reporting is enabled from the add-on. More information on configuring screen reader alerts can be found here: https://support.zoom.com/hc/en/article?id=zm_kb&amp;sysparm_article=KB0066934.</source>
+</segment>
+</unit>
+<unit id="697da691-b14d-42d1-a458-59f8212f355a">
+<notes>
+<note appliesTo="source">line: 11</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Alerts reporting configured via custom alerts reporting mode is optimized for Zoom interface in English.</source>
+</segment>
+</unit>
+<unit id="182056aa-7c03-441d-915e-64dc820aad30">
+<notes>
+<note appliesTo="source">line: 13</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Keyboard shortcuts for controlling alerts in meetings</source>
+</segment>
+</unit>
+<unit id="c77fb68f-b981-4728-978e-4368b522e31b">
+<notes>
+<note appliesTo="source">line: 15</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+Shift+A: cycles between alerts reporting modes. The following modes are available:</source>
+</segment>
+</unit>
+<unit id="76c1e701-970e-4650-95de-739a9049ac41">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: 	* </note>
+</notes>
+<segment>
+<source>Report all alerts mode where all alerts are reported as usual</source>
+</segment>
+</unit>
+<unit id="e5861db9-c2c1-4896-80a4-40ae9e20778b">
+<notes>
+<note appliesTo="source">line: 17</note>
+<note appliesTo="source">prefix: 	* </note>
+</notes>
+<segment>
+<source>Beep for alerts where NVDA will play a short beep for every alert displayed in Zoom</source>
+</segment>
+</unit>
+<unit id="c41495d4-3420-4a06-be82-f95ef1ebdf0e">
+<notes>
+<note appliesTo="source">line: 18</note>
+<note appliesTo="source">prefix: 	* </note>
+</notes>
+<segment>
+<source>Silence all alerts where NVDA will ignore all alerts</source>
+</segment>
+</unit>
+<unit id="21a6bd46-fd7a-4170-9486-206607a486e8">
+<notes>
+<note appliesTo="source">line: 19</note>
+<note appliesTo="source">prefix: 	* </note>
+</notes>
+<segment>
+<source>Custom mode where the user can customize which alerts they want NVDA to announce. This can be done using the settings dialog of the add-on, or by using the dedicated keyboard shortcuts.</source>
+</segment>
+</unit>
+<unit id="c32e9de4-c88d-4fbd-a828-a9782e4a429f">
+<notes>
+<note appliesTo="source">line: 21</note>
+</notes>
+<segment>
+<source>The following shortcuts can be used to toggle the announcements of each type of alert (note that this will be effective when custom mode is selected):</source>
+</segment>
+</unit>
+<unit id="ddaf770a-d58e-44b6-b4e0-58b4986c00ff">
+<notes>
+<note appliesTo="source">line: 23</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+1: Participant Has Joined/Left Meeting (Host Only)</source>
+</segment>
+</unit>
+<unit id="bf3a515a-821e-44fd-b847-b02e8ad0e639">
+<notes>
+<note appliesTo="source">line: 24</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+2: Participant Has Joined/Left Waiting Room (Host Only)</source>
+</segment>
+</unit>
+<unit id="594f4ca5-33ac-4d79-a1f7-012be8f83a0f">
+<notes>
+<note appliesTo="source">line: 25</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+3: Audio Muted by Host</source>
+</segment>
+</unit>
+<unit id="0bd0d855-fe87-41b6-a57e-a2f44b980bf5">
+<notes>
+<note appliesTo="source">line: 26</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+4: Video Stopped by Host</source>
+</segment>
+</unit>
+<unit id="70d10867-4e38-4e29-9ed1-d7013e6fc986">
+<notes>
+<note appliesTo="source">line: 27</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+5: Screen Sharing Started/Stopped by a Participant</source>
+</segment>
+</unit>
+<unit id="cecc87c4-0f4b-4c37-85fb-06ce34bf5667">
+<notes>
+<note appliesTo="source">line: 28</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+6: Recording Permission Granted/Revoked</source>
+</segment>
+</unit>
+<unit id="657fc593-21e5-499e-b5ed-3770ae523789">
+<notes>
+<note appliesTo="source">line: 29</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+7:  Public In-meeting Chat Received</source>
+</segment>
+</unit>
+<unit id="12a2ac08-184c-4b06-bab5-f77249289ed7">
+<notes>
+<note appliesTo="source">line: 30</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+8: Private In-meeting Chat Received</source>
+</segment>
+</unit>
+<unit id="b881327a-f592-4b40-99c2-fb717b0d948d">
+<notes>
+<note appliesTo="source">line: 31</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+9: In-meeting File Upload Completed</source>
+</segment>
+</unit>
+<unit id="1b655614-e2fa-49b6-ae9f-41758d7ebc23">
+<notes>
+<note appliesTo="source">line: 32</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Ctrl+0: Host Privilege Granted/Revoked</source>
+</segment>
+</unit>
+<unit id="ded9f0db-15a2-40bf-9f62-eb29a48e3a13">
+<notes>
+<note appliesTo="source">line: 33</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Shift+Ctrl+1: Participant Has Raised/Lowered Hand (Host Only)</source>
+</segment>
+</unit>
+<unit id="7a41be59-5158-4f9c-93e7-8a82bde980fd">
+<notes>
+<note appliesTo="source">line: 34</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Shift+Ctrl+2: Remote Control Permission Granted/Revoked</source>
+</segment>
+</unit>
+<unit id="fb42345c-fa42-47c5-b76f-8d6502771a93">
+<notes>
+<note appliesTo="source">line: 35</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Shift+Ctrl+3: IM chat message received</source>
+</segment>
+</unit>
+<unit id="8eb1c44e-051d-4eae-a622-f37483983452">
+<notes>
+<note appliesTo="source">line: 37</note>
+</notes>
+<segment>
+<source>Note that you need to leave reporting all alert types selected (in Zoom accessibility settings) to have the add-on function as expected.</source>
+</segment>
+</unit>
+<unit id="f53f1632-8ced-4c2c-afe7-81aeb6cd2cef">
+<notes>
+<note appliesTo="source">line: 39</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Keyboard shortcut for opening the add-on Dialog</source>
+</segment>
+</unit>
+<unit id="f6a4f7bb-a48d-4ef4-95ee-4d37979b6874">
+<notes>
+<note appliesTo="source">line: 41</note>
+</notes>
+<segment>
+<source>NVDA+Z opens the add-on dialog. Using this dialog you can :</source>
+</segment>
+</unit>
+<unit id="d5268f04-e9bb-4015-9c42-fac424a51456">
+<notes>
+<note appliesTo="source">line: 43</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>See which alerts are announced and which aren't</source>
+</segment>
+</unit>
+<unit id="4b192e96-4f5e-4b1d-872d-48a04894fe9e">
+<notes>
+<note appliesTo="source">line: 44</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Select the types of the alerts you want to be announced</source>
+</segment>
+</unit>
+<unit id="3eedeb51-0324-4712-a456-bde6c9750b9c">
+<notes>
+<note appliesTo="source">line: 45</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Choose alerts reporting mode</source>
+</segment>
+</unit>
+<unit id="4c165866-cead-4b8a-9092-471c1ef4dcdc">
+<notes>
+<note appliesTo="source">line: 46</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Save custom changes</source>
+</segment>
+</unit>
+<unit id="e0a309e0-9034-4c26-8b68-c49be0fac53a">
+<notes>
+<note appliesTo="source">line: 48</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Remote control</source>
+</segment>
+</unit>
+<unit id="25ada287-78e2-4d58-b864-6358871e326c">
+<notes>
+<note appliesTo="source">line: 50</note>
+</notes>
+<segment>
+<source>It has been found out that Zoom now has a dedicated keyboard shortcuts to handle the remote control in an accessible manner. Use the following keyboard shortcuts to:</source>
+</segment>
+</unit>
+<unit id="1628fddd-6619-4eeb-81c8-8bd1ac378ba3">
+<notes>
+<note appliesTo="source">line: 52</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Alt+Shift+r: to start remote control. Note that you need to have the permission of the remote controlled computer user to be able to proceed</source>
+</segment>
+</unit>
+<unit id="b539fb13-460a-41d7-abf3-1f984d0dd9a2">
+<notes>
+<note appliesTo="source">line: 53</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Alt + Shift + g: to give up remote control or to revoke it</source>
+</segment>
+</unit>
+<unit id="26e6d688-3c9d-4fdd-b708-f7d7f83febd3">
+<notes>
+<note appliesTo="source">line: 55</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Chat history dialog</source>
+</segment>
+</unit>
+<unit id="830c4995-361c-4543-8e1d-218fe5f4d372">
+<notes>
+<note appliesTo="source">line: 57</note>
+</notes>
+<segment>
+<source>The add-on has a custom dialog where you can see all chat messages sent during the meeting while the add-on was running. To open this dialog, use NVDA+Ctrl+h. The dialog shows a list of the sent chat messages with their timestamps also (this works if two or more people were attending a meeting).</source>
+</segment>
+</unit>
+</file>
+</xliff>
