@@ -1,23 +1,18 @@
-# NVDA için Zoom Erişilebilirlik İyileştirmeleri eklentisi
+# Zoom erişilebilirlik iyileştirmeleri
 
 * Yazarlar: Mohamad Suliman, Eilana Benish
 
 Bu eklenti, Zoom programının erişilebilirliğini arttıran özellikler içermektedir. Toplantılar sırasında farklı olaylardan gelen uyarıları daha kolay takip edebilmek için klavye kısayolları sağlar. Ayrıca, uzaktan kontrol işlevinin daha erişilebilir hale getirilmesi gibi birçok farklı iyileştirme içerir.
 
-Notlar:
+## Toplantı sırasında uyarıları kontrol etmek için klavye kısayolları
 
-* Ekran okuyucu uyarılarını Zoom'un kendisinden (Zoom 5.2.1 ve üzeri) yapılandırabilirsiniz. Bir uyarı Zoom'un kendisinden devre dışı bırakılırsa, uyarı raporlaması eklentiden etkinleştirilse bile NVDA bunları duyurmayacaktır. Ekran okuyucu uyarılarını yapılandırma hakkında daha fazla bilgiyi burada bulabilirsiniz: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066934.
-* Özel uyarı bildirim modu aracılığıyla yapılandırılan uyarı bildirimleri, İngilizce Zoom arayüzü için optimize edilmiştir.
-
-## Keyboard shortcuts for controlling alerts in meetingsToplantı sırasında uyarıları kontrol etmek için klavye kısayolları
-
-* NVDA + CTRL + Shift + A: farklı bildirim uyarı modları arasında geçiş yapar. Aşağıdaki modlar kullanılabilir:
-	* Tüm uyarıları bildir, tüm uyarıları bildirir
-	* Uyarıları bip sesiyle bildir: NVDA, Zoom’da görüntülenen her uyarı için kısa bir bip sesi çalar
-	* Uyarıları bildirme,  NVDA hiçbir uyarıyı bildirmez
+* NVDA + Shift + A: farklı bildirim uyarı modları arasında geçiş yapar. Aşağıdaki modlar kullanılabilir:
+	* Tüm uyarıları bildir, tüm uyarıları bildirir.
+	* Uyarıları bip sesiyle bildir, NVDA'nın Zoom'da görüntülenen her uyarı için kısa bir bip sesi çalar.
+	* uyarıları bildirme,  NVDA hiçbir uyarıyı bildirmez.
 	* Özel, sadece seçilen uyarılar bildirilir. Bu, eklentinin ayarlar iletişim kutusu kullanılarak veya bu işlev için atanmış klavye kısayolu kullanılarak yapılabilir.
 
-Her bir uyarı türünün bildirimini açıp kapatmak için aşağıdaki kısayollar kullanılabilir. Not: bu ayar, sadece özel mod seçiliyken etkilidir:
+Her bir uyarı türünün bildirimini açıp kapatmak için aşağıdaki kısayollar kullanılabilir. Not: bu ayar, sadece özel mod seçiliyken etkilidir.
 
 * NVDA + Ctrl + 1: Katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı (Yalnızca Toplantı Sahibi)
 * NVDA + Ctrl + 2: Katılımcı Katıldı/Bekleme Odasından Ayrıldı (Yalnızca Toplantı Sahibi)
@@ -33,24 +28,25 @@ Her bir uyarı türünün bildirimini açıp kapatmak için aşağıdaki kısayo
 * NVDA + Shift + Ctrl + 2: Uzaktan Kontrol İzni Verildi/İptal Edildi
 * NVDA + Shift + Ctrl + 3: IM sohbet mesajı alındı
 
-Eklentinin istenen şekilde çalışması için Zoom erişilebilirlik iyileştirmeleri ayarlarında tüm uyarı türlerini Bildir seçeneğinin işaretli olduğuna emin olun.
+Eklentinin istenen şekilde çalışması için Zoom erişilebilirlik iyileştirmeleri ayarlarında tüm uyarı türlerini Bildir seçeneğinin işaretli olduğuna emin olun. 
 
-## Eklenti İletişim Kutusunu açmak için klavye kısayolu
+## Eklenti iletişim kutusunu açmak için klavye kısayolu:
 
-NVDA + Z Eklenti iletişim kutusunu açar:
+NVDA + Z Eklenti iletişim kutusunu açar !
 
-* Bildirilen ve bildirilmeyen uyarıları görme
-* Bildirilmesini istediğiniz uyarı türlerini eçme
-* Uyarı bildirim modunu seçme
-* Save custom changes
+Bu iletişim kutusunu kullanarak şunları yapabilirsiniz:
+
+* Bildirilen ve bildirilmeyen uyarıları görme,
+* Bildirilmesini istediğiniz uyarı türlerini eçme,
+* Uyarı bildirim modunu seçme,
+* Özel değişiklikleri kaydetme.
 
 ## Uzaktan Kontrol
 
-Zoom’un artık uzaktan kumandayı erişilebilir bir şekilde kullanmak için özel klavye kısayolları sunduğu ortaya çıktı. Aşağıdaki klavye kısayollarını şu amaçlarla kullanabilirsiniz:
+Uzaktan kontrol izni verildikten sonra, NVDA + O klavye kısayolu, uzaktan kontrol ekranı ve kendi ekranınız arasında geçiş yapmanızı sağlar.
 
-* Alt+Shift+r: Uzaktan kumandayı başlatmak için. İşlemi gerçekleştirebilmek için uzaktan kumanda edilecek bilgisayarın kullanıcısından izin almanız gerektiğini unutmayın
-* Alt + Shift + g: Uzaktan kumandayı devretmek veya iptal etmek için
+Diğer ekranı uzaktan kontrol edebilmek için odağın toplantı kontrollerinden birinde olması gerektiğini unutmayın.
 
-## Sohbet geçmişi iletişim kutusu
+## Önemli:
 
-Eklentinin, eklenti çalışırken toplantı sırasında gönderilen tüm sohbet mesajlarını görebileceğiniz özel bir iletişim kutusu vardır. Bu iletişim kutusunu açmak için NVDA+Ctrl+h tuşlarını kullanın. İletişim kutusu, gönderilen sohbet mesajlarının bir listesini zaman damgalarıyla birlikte gösterir (bu, bir toplantıya iki veya daha fazla kişi katılıyorsa işe yarar).
+Özel bildirim modu ayarı, şuanda sadece kullanıcı dili İngilizce olarak ayarlandığında çalışmaktadır.
