@@ -1,132 +1,38 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the zoomEnhancements package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: zoomEnhancements 1.1.1\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2022-07-14 10:53+0100\n"
-"Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
-"Language-Team: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
-"Language: it\n"
+"Project-Id-Version: nvdaaddons\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-06-21 05:44+0000\n"
+"PO-Revision-Date: 2026-06-22 00:28\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: it\n"
+"X-Crowdin-File: zoomEnhancements.pot\n"
+"X-Crowdin-File-ID: 623\n"
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
 msgid "Zoom Enhancements"
 msgstr "Zoom Enhancements"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"An add-on which aims to enhance the experience while using Zoom and NVDA"
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid "An add-on which aims to enhance the experience while using Zoom and NVDA"
+msgstr "Un componente aggiuntivo che cerca di migliorare l'esperienza durante l'utilizzo di Zoom e NVDA"
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid "* NVDA 2025.3.3 or later is required."
 msgstr ""
-"Un componente aggiuntivo che cerca di migliorare l'esperienza durante "
-"l'utilizzo di Zoom e NVDA"
 
-#~ msgid "Zoom Enhancements settings"
-#~ msgstr "Impostazioni miglioramenti di Zoom"
-
-#~ msgid "Alerts reporting mode"
-#~ msgstr "Modalità di segnalazione avvisi"
-
-#~ msgid ""
-#~ "Choose which alerts should be reported (effective only when custom mode "
-#~ "is selected)"
-#~ msgstr ""
-#~ "Scegli quali avvisi devono essere segnalati (funziona solo quando è "
-#~ "selezionata la modalità personalizzata)"
-
-#~ msgid "Participant Has Joined/Left Meeting"
-#~ msgstr "Il partecipante si è unito/ha lasciato la riunione"
-
-#~ msgid "Participant Has Joined/Left Waiting Room"
-#~ msgstr "Il partecipante è entrato/ha lasciato la sala d'attesa"
-
-#~ msgid "Audio Muted by Host"
-#~ msgstr "Audio disattivato dall'host"
-
-#~ msgid "Video Stopped by Host"
-#~ msgstr "Video interrotto dall'host"
-
-#~ msgid "Screen Sharing Started/Stopped by a Participant"
-#~ msgstr "Condivisione schermo avviata/arrestata da un partecipante"
-
-#~ msgid "Recording Permission Granted/Revoked"
-#~ msgstr "Autorizzazione alla registrazione concessa/revocata"
-
-#~ msgid "Public In-meeting Chat Received"
-#~ msgstr "Ricevuta chat pubblica in riunione"
-
-#~ msgid "Private In-meeting Chat Received"
-#~ msgstr "Ricevuta chat privata in riunione"
-
-#~ msgid "In-meeting File Upload Completed"
-#~ msgstr "Caricamento del file durante la riunione completato"
-
-#~ msgid "Host Privilege Granted/Revoked"
-#~ msgstr "Privilegio host concesso/revocato"
-
-#~ msgid "Participant Has Raised/Lowered Hand (Host Only)"
-#~ msgstr "Il partecipante ha alzato/abbassato la mano (solo host)"
-
-#~ msgid "Remote Control Permission Granted/Revoked"
-#~ msgstr "Autorizzazione controllo remoto concessa/revocata"
-
-#~ msgid "IM Chat Received"
-#~ msgstr "Messaggio Chat ricevuto"
-
-#~ msgid "Report all alerts"
-#~ msgstr "Segnala tutti gli avvisi"
-
-#~ msgid "Beep for alerts"
-#~ msgstr "Bip per avvisi"
-
-#~ msgid "Silence all alerts"
-#~ msgstr "Silenzia tutti gli avvisi"
-
-#~ msgid "Custom"
-#~ msgstr "Personalizzato"
-
-#~ msgid "off"
-#~ msgstr "Disattivo"
-
-#~ msgid "on"
-#~ msgstr "Attivo"
-
-#~ msgid "Toggles reporting joined / left meeting alerts on / off"
-#~ msgstr ""
-#~ "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o "
-#~ "lascia la riunione"
-
-#~ msgid "Reporting Participant Has Joined/Left Meeting is %s"
-#~ msgstr ""
-#~ "La segnalazione di chi si unisce o lascia la riunione è impostata su %s"
-
-#~ msgid "Reporting IM Chat Received is %s"
-#~ msgstr "Segnalazione chat  ricevuta è %s"
-
-#~ msgid ""
-#~ "Toggles between reporting alerts as usual, beeping for the alert, "
-#~ "silencing alerts completely, or custom mode where the user can choose "
-#~ "which alerts are reported and which aren't."
-#~ msgstr ""
-#~ "Alterna tra varie modalità di segnalazione degli avvisi; comprende: "
-#~ "emissione di un segnale acustico, sopressione della segnalazione avvisi, "
-#~ "annuncio in modalità predefinita e modalità personalizzata in cui "
-#~ "l'utente può scegliere quali avvisi vengono segnalati e quali no."
-
-#~ msgid "Shows Zoom enhancements settings dialog"
-#~ msgstr "Mostra la finestra di dialogo impostazioni miglioramenti zoom"
-
-#~ msgid "Shows chat history dialog"
-#~ msgstr "Mostra la finestra di dialogo della cronologia chat"
-
-#~ msgid "Chat history"
-#~ msgstr "Cronologia chat"
