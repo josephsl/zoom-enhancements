@@ -7,85 +7,165 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zoomEnhancements 1.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2026-01-26 12:37+0200\n"
-"PO-Revision-Date: 2026-01-26 12:40+0200\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-27 11:49-0600\n"
 "Last-Translator: Volodymyr Pyrih <vp88.mobile@gmail.com>\n"
 "Language-Team: \n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
-#: zoom/__init__.py:46 zoom/dialogs.py:19
+#. Translators: Title for the settings dialog
+#. Translators: the name of the add-on category in input gestures
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "Zoom Enhancements"
 msgstr "Zoom Enhancements"
 
-#: zoom/__init__.py:52
+#. Translators: description for the settings dialog
+msgid ""
+"Configures Zoom Enhancements add-on settings for the Zoom web conference "
+"tool."
+msgstr ""
+"Налаштовує параметри додатка Zoom Enhancements для інструмента веб-"
+"конференцій Zoom."
+
+#. Translators: the label of the combo box in the settings dialog
+msgid "&Alerts reporting mode:"
+msgstr "&Режим повідомлень про сповіщення:"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "participant has joined/left meeting"
+msgstr "Учасник приєднався/залишив конференцію"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "participant has joined/left waiting room"
+msgstr "Учасник приєднався/залишив кімнату"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "audio muted by host"
+msgstr "Організатор вимкнув аудіо"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "video stopped by host"
+msgstr "Організатор зупинив відео"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "screen sharing started/stopped by a participant"
+msgstr "Учасник почав/припинив демонстрацію екрана"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "recording permission granted/revoked"
+msgstr "Дозвіл на запис одержано/відкликано"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "public in-meeting chat received"
+msgstr "Одержано публічне повідомлення в чаті"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "private in-meeting chat received"
+msgstr "Одержано приватне повідомлення в чаті"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "in-meeting file upload completed"
+msgstr "Завантаження файла в конференцію завершено"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "host privilege granted/revoked"
+msgstr "Права організатора одержано/відкликано"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "participant has raised/lowered hand (host only)"
+msgstr "Учасник підняв/опустив руку (лише для організатора)"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "remote control permission granted/revoked"
+msgstr "Дозвіл на дистанційне керування одержано/відкликано"
+
+#. Translators: a label of a checkbox in the settings dialog
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "IM chat received"
+msgstr "Одержано повідомлення в чаті"
+
+#. Translators: the label of the checkable list in the settings dialog
+msgid ""
+"&Choose which alerts should be reported (effective only when custom mode is "
+"selected):"
+msgstr ""
+"&Виберіть, про які сповіщення слід повідомляти (діє тільки у разі вибору "
+"користувацького режиму):"
+
+#. Translators: a label for alerts reporting mode
 msgid "Report all alerts"
 msgstr "Повідомляти про всі попередження"
 
-#: zoom/__init__.py:54
+#. Translators: a label for alerts reporting mode
 msgid "Beep for alerts"
 msgstr "Сигнали для попереджень"
 
-#: zoom/__init__.py:56
+#. Translators: a label for alerts reporting mode
 msgid "Silence all alerts"
 msgstr "Замовчувати всі попередження"
 
-#: zoom/__init__.py:58
+#. Translators: a label for alerts reporting mode
 msgid "Custom"
 msgstr "Власний"
 
-#: zoom/__init__.py:63
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "screen sharing started/stopped by participant"
+msgstr "Учасник почав/припинив демонстрацію екрана"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+msgid "participant has raised/lowered hand"
+msgstr "Учасник підняв/опустив руку (лише для організатора)"
+
+#. Translators: the label of the off state for reporting an alert
 msgid "off"
 msgstr "вимкнено"
 
-#: zoom/__init__.py:67
+#. Translators: the label of on state for reporting an alert
 msgid "on"
 msgstr "увімкнено"
 
-#: zoom/__init__.py:175
+#. Translators: a message reported for the user when toggling reporting Zoom alerts
+#, python-brace-format
+msgid "Report {zoomAlert} {alertSetting}"
+msgstr ""
+
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr ""
 "Промовляння попередження про приєднання/вихід із конференції увімкнено/"
 "вимкнено"
 
-#: zoom/__init__.py:188
-#, python-format
-msgid "Reporting Participant Has Joined/Left Meeting is %s"
-msgstr "Промовляння Учасник приєднався/залишив конференцію %s"
-
-#: zoom/__init__.py:193
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left Waiting Room alerts on / off"
 msgstr ""
 "Промовляння попередження про приєднання/вихід із кімнати увімкнено/вимкнено"
 
-#: zoom/__init__.py:206
-#, python-format
-msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
-msgstr "Промовляння Учасник приєднався/залишив кімнату %s"
-
-#: zoom/__init__.py:210
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
 msgstr "Вмикає/вимикає промовляння про вимкнення організатором аудіо"
 
-#: zoom/__init__.py:222
-#, python-format
-msgid "Reporting Audio Muted By Host is %s"
-msgstr "Промовляння Організатор вимкнув аудіо %s"
-
-#: zoom/__init__.py:227
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting video stopped by host alerts on / off"
 msgstr ""
 "Промовляння попередження про зупинку організатором відео увімкнено/вимкнено"
 
-#: zoom/__init__.py:239
-#, python-format
-msgid "Reporting Video Stopped By Host is %s"
-msgstr "Промовляння Організатор зупинив відео %s"
-
-#: zoom/__init__.py:244
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting screen sharing started / stopped by participant alerts "
 "on / off"
@@ -93,98 +173,53 @@ msgstr ""
 "Промовляння попередження про початок/зупинку демонстрації екрана увімкнено/"
 "вимкнено"
 
-#: zoom/__init__.py:257
-#, python-format
-msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
-msgstr "Промовляння Учасник почав/припинив демонстрацію екрана %s"
-
-#: zoom/__init__.py:262
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting recording permission granted / revoked alerts on / off"
 msgstr ""
 "Промовляння попередження про надання/відкликання дозволу на запис увімкнено/"
 "вимкнено"
 
-#: zoom/__init__.py:275
-#, python-format
-msgid "Reporting Recording Permission Granted/Revoked is %s"
-msgstr "Промовляння Дозвіл на запис одержано/відкликано %s"
-
-#: zoom/__init__.py:280
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
 msgstr ""
 "Промовляння попередження про одержання публічного повідомлення в чаті "
 "увімкнено/вимкнено"
 
-#: zoom/__init__.py:292
-#, python-format
-msgid "Reporting Public In-meeting Chat Received is %s"
-msgstr "Промовляння Одержано публічне повідомлення в чаті %s"
-
-#: zoom/__init__.py:297
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting private in-meeting chat received alerts on / off"
 msgstr ""
 "Промовляння попередження про одержання приватного повідомлення в чаті "
 "увімкнено/вимкнено"
 
-#: zoom/__init__.py:309
-#, python-format
-msgid "Reporting Private In-meeting Chat Received is %s"
-msgstr "Промовляння Одержано приватне повідомлення в чаті %s"
-
-#: zoom/__init__.py:314
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
 msgstr ""
 "Промовляння попередження про завантаження файла в конференцію увімкнено/"
 "вимкнено"
 
-#: zoom/__init__.py:326
-#, python-format
-msgid "Reporting In-meeting File Upload Completed is %s"
-msgstr "Промовляння Завантаження файла в конференцію завершено %s"
-
-#: zoom/__init__.py:331
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting host privilege granted / revoked alerts on / off"
 msgstr ""
 "Вмикає/вимикає промовляння попередження про надання/відкликання дозволів "
 "організатора"
 
-#: zoom/__init__.py:343
-#, python-format
-msgid "Reporting Host Privilege Granted/Revoked is %s"
-msgstr "Промовляння Права організатора одержано/відкликано %s"
-
-#: zoom/__init__.py:348
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting participant raised / lowered hand alerts on / off"
 msgstr "Промовляння попередження про підняту/опущену руку увімкнено/вимкнено"
 
-#: zoom/__init__.py:361
-#, python-format
-msgid "Reporting Participant Has Raised/Lowered Hand is %s"
-msgstr "Промовляння Учасник підняв/опустив руку %s"
-
-#: zoom/__init__.py:366
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting remote control permission granted /revoked alerts on / off"
 msgstr ""
 "Промовляння попередження про надання/відкликання дозволу на дистанційне "
 "керування увімкнено/вимкнено"
 
-#: zoom/__init__.py:379
-#, python-format
-msgid "Reporting Remote Control Permission Granted/Revoked is %s"
-msgstr "Промовляння Дозвіл на дистанційне керування одержано/відкликано %s"
-
-#: zoom/__init__.py:383
+#. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting IM chat received alerts on / off"
 msgstr "Вмикає/вимикає попередження про одержання повідомлень у чаті"
 
-#: zoom/__init__.py:396
-#, python-format
-msgid "Reporting IM Chat Received is %s"
-msgstr "Промовляння Одержано повідомлення в чаті %s"
-
-#: zoom/__init__.py:400
+#. Translators: a description for a command to cycle between alerts reporting modes
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
 "alerts completely, or custom mode where the user can choose which alerts are "
@@ -194,93 +229,25 @@ msgstr ""
 "замість попереджень, вимкненням усіх попереджень і власним режимом, у якому "
 "користувач визначив, які попередження промовляти, а які ні."
 
-#: zoom/__init__.py:424
+#. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
 msgstr "Показує діалог налаштувань Zoom enhancements"
 
-#: zoom/__init__.py:432
+#. Translators: a description for a command to show chat history dialog
 msgid "Shows chat history dialog"
 msgstr "Показує діалог історії чату"
 
-#: zoom/__init__.py:439
+#. Translaters: the title of the chat history dialog
 msgid "Chat history"
 msgstr "Історія чату"
 
-#: zoom/dialogs.py:21
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid ""
-"Configures Zoom Enhancements add-on settings for the Zoom web conference "
-"tool."
+"An add-on which aims to enhance the experience while using Zoom and NVDA"
+msgstr "Додаток, мета якого — поліпшити досвід використання Zoom і NVDA"
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+msgid "* NVDA 2025.3.3 or later is required."
 msgstr ""
-"Налаштовує параметри додатка Zoom Enhancements для інструмента веб-"
-"конференцій Zoom."
-
-#: zoom/dialogs.py:30
-msgid "&Alerts reporting mode:"
-msgstr "&Режим повідомлень про сповіщення:"
-
-#: zoom/dialogs.py:40
-msgid "Participant Has Joined/Left Meeting"
-msgstr "Учасник приєднався/залишив конференцію"
-
-#: zoom/dialogs.py:42
-msgid "Participant Has Joined/Left Waiting Room"
-msgstr "Учасник приєднався/залишив кімнату"
-
-#: zoom/dialogs.py:44
-msgid "Audio Muted by Host"
-msgstr "Організатор вимкнув аудіо"
-
-#: zoom/dialogs.py:46
-msgid "Video Stopped by Host"
-msgstr "Організатор зупинив відео"
-
-#: zoom/dialogs.py:48
-msgid "Screen Sharing Started/Stopped by a Participant"
-msgstr "Учасник почав/припинив демонстрацію екрана"
-
-#: zoom/dialogs.py:50
-msgid "Recording Permission Granted/Revoked"
-msgstr "Дозвіл на запис одержано/відкликано"
-
-#: zoom/dialogs.py:52
-msgid "Public In-meeting Chat Received"
-msgstr "Одержано публічне повідомлення в чаті"
-
-#: zoom/dialogs.py:54
-msgid "Private In-meeting Chat Received"
-msgstr "Одержано приватне повідомлення в чаті"
-
-#: zoom/dialogs.py:56
-msgid "In-meeting File Upload Completed"
-msgstr "Завантаження файла в конференцію завершено"
-
-#: zoom/dialogs.py:58
-msgid "Host Privilege Granted/Revoked"
-msgstr "Права організатора одержано/відкликано"
-
-#: zoom/dialogs.py:60
-msgid "Participant Has Raised/Lowered Hand (Host Only)"
-msgstr "Учасник підняв/опустив руку (лише для організатора)"
-
-#: zoom/dialogs.py:62
-msgid "Remote Control Permission Granted/Revoked"
-msgstr "Дозвіл на дистанційне керування одержано/відкликано"
-
-#: zoom/dialogs.py:64
-msgid "IM Chat Received"
-msgstr "Одержано повідомлення в чаті"
-
-#: zoom/dialogs.py:83
-msgid ""
-"&Choose which alerts should be reported (effective only when custom mode is "
-"selected):"
-msgstr ""
-"&Виберіть, про які сповіщення слід повідомляти (діє тільки у разі вибору "
-"користувацького режиму):"
-
-#~ msgid "Zoom Enhancements settings"
-#~ msgstr "Налаштування Zoom enhancements"
-
-#~ msgid ""
-#~ "An add-on which aims to enhance the experience while using Zoom and NVDA"
-#~ msgstr "Додаток, мета якого — поліпшити досвід використання Zoom і NVDA"
