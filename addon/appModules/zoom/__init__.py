@@ -21,6 +21,7 @@ from . import regexs
 from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
 
 
+addonHandler.initTranslation()
 
 def initConfiguration():
 	confspec = {
@@ -40,10 +41,6 @@ def initConfiguration():
 		"IMChatReceived": "boolean(default=True)",
 	}
 	config.conf.spec["zoomEnhancements"] = confspec
-
-
-# Execute on init
-addonHandler.initTranslation()
 
 
 # Translators: the name of the add-on category in input gestures
