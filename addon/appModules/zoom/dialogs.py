@@ -20,7 +20,7 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 	# Translators: description for the settings dialog
 	panelDescription = _("Configures Zoom Enhancements add-on settings for the Zoom web conference tool.")
 
-	def makeSettings(self, settingsSizer):
+	def makeSettings(self, settingsSizer: wx.BoxSizer):
 		settingsSizerHelper = guiHelper.BoxSizerHelper(
 			self, sizer=settingsSizer)
 		from . import alertModeToLabel
