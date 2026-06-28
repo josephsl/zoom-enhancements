@@ -115,7 +115,7 @@ class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
 
 class ChatHistoryDialog(DPIScaledDialog):
 
-	def __init__(self, title, items):
+	def __init__(self, title: str, items: list[str]):
 		windowStyle = wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.MAXIMIZE_BOX
 		super().__init__(gui.mainFrame, title=title, style=windowStyle)
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
