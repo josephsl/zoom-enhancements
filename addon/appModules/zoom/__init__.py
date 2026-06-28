@@ -10,9 +10,11 @@ from scriptHandler import script
 import inputCore
 import ui
 import config
+from NVDAObjects import NVDAObject
 import addonHandler
 from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
 from . import regexs
+import collections.abc
 import datetime
 import gui
 from gui import NVDASettingsDialog
@@ -120,7 +122,7 @@ class AppModule(CoreAppModule):
 		except ValueError:
 			pass
 
-	def event_alert(self, obj, nextHandler):
+	def event_alert(self, obj: NVDAObject, nextHandler: collections.abc.Callable[[], None]):
 		if regexs.publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or regexs.privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
 			self._handleChatMessage(obj.name)
 		match config.conf["zoomEnhancements"]["alertsReportingMode"]:
@@ -185,7 +187,7 @@ class AppModule(CoreAppModule):
 		else:
 			nextHandler()
 
-	def event_nameChange(self, obj, nextHandler):
+	def event_nameChange(self, obj: NVDAObject, nextHandler: collections.abc.Callable[[], None]):
 		nextHandler()
 		if obj.role == controlTypes.Role.STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
 			if self.receivedChatPrefix:
