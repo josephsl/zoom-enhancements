@@ -141,6 +141,7 @@ reportInvalidTypeForm = true
 reportInvalidTypeVarUse = true
 reportMatchNotExhaustive = true
 reportMissingModuleSource = true
+reportMissingParameterType = true
 reportMissingSuperCall = true
 reportMissingTypeArgument = true
 reportNoOverloadImplementation = true
@@ -191,7 +192,6 @@ reportMissingTypeStubs = false
 reportImportCycles = false  # Settings panel and chat history
 reportInvalidStringEscapeSequence = false  # Regular expressions
 reportMissingImports = false  # wxPython and NVDA Core modules
-reportMissingParameterType = false  # Mostly wxPython and NVDA Core/gestures/classes
 reportUndefinedVariable = false  # _ = gettext.gettext call
 reportUnknownArgumentType = false  # Mostly Python types
 reportUnknownMemberType = false  # NVDA Core and wxPython attributes
