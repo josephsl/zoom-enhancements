@@ -4,6 +4,8 @@
 # See the file COPYING for more details
 
 from nvdaBuiltin.appModules.zoom import AppModule as CoreAppModule
+import collections.abc
+import datetime
 import eventHandler
 import tones
 from scriptHandler import script
@@ -12,13 +14,12 @@ import ui
 import config
 from NVDAObjects import NVDAObject
 import addonHandler
-from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
-from . import regexs
-import collections.abc
-import datetime
 import gui
 from gui import NVDASettingsDialog
 import controlTypes
+from . import regexs
+from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
+
 
 
 def initConfiguration():
