@@ -100,7 +100,7 @@ onLabel = _("on")
 
 
 class AppModule(CoreAppModule):
-	def __init__(self, processID, appName):
+	def __init__(self, processID: int, appName: str | None=None):
 		super().__init__(processID, appName)
 		eventHandler.requestEvents(
 			"nameChange", processId=self.processID, windowClassName="zBubbleBaseClass")
