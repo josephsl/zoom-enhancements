@@ -60,7 +60,7 @@ alertModeToLabel: dict[int, str] = {
 }
 
 
-# Zoom alerts rpeorting settings messages.
+# Zoom alerts reporting settings messages.
 zoomAlertsToggleMessages: dict[str, str] = {
 	# Translators: a message reported for the user when toggling reporting a spicific alert
 	"ParticipantHasJoined/LeftMeeting": _("participant has joined/left meeting"),
