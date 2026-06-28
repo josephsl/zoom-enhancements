@@ -7,6 +7,7 @@ from nvdaBuiltin.appModules.zoom import AppModule as CoreAppModule
 import eventHandler
 import tones
 from scriptHandler import script
+import inputCore
 import ui
 import config
 import addonHandler
@@ -223,7 +224,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad1"
 		]
 	)
-	def script_participantJoinedLeftMeeting(self, gesture):
+	def script_participantJoinedLeftMeeting(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("ParticipantHasJoined/LeftMeeting")
 
 	@script(
@@ -235,7 +236,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad2"
 		]
 	)
-	def script_participantJoinedLeftWaitingRoom(self, gesture):
+	def script_participantJoinedLeftWaitingRoom(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("ParticipantHasJoined/LeftWaitingRoom")
 
 	@script(
@@ -246,7 +247,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad3"
 		]
 	)
-	def script_audioMutedByHost(self, gesture):
+	def script_audioMutedByHost(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("AudioMutedByHost")
 
 	@script(
@@ -258,7 +259,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad4"
 		]
 	)
-	def script_videoStoppedByHost(self, gesture):
+	def script_videoStoppedByHost(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("VideoStoppedByHost")
 
 	@script(
@@ -270,7 +271,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad5",
 		]
 	)
-	def script_screenSharingStartedStopped(self, gesture):
+	def script_screenSharingStartedStopped(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("ScreenSharingStarted/StoppedByParticipant")
 
 	@script(
@@ -282,7 +283,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad6"
 		]
 	)
-	def script_recordingPermissionGrantedRevoked(self, gesture):
+	def script_recordingPermissionGrantedRevoked(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("RecordingPermissionGranted/Revoked")
 
 	@script(
@@ -294,7 +295,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad7"
 		]
 	)
-	def script_publicInMeetingChatReceived(self, gesture):
+	def script_publicInMeetingChatReceived(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("PublicIn-meetingChatReceived")
 
 	@script(
@@ -306,7 +307,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad8"
 		]
 	)
-	def script_privateInMeetingChatReceived(self, gesture):
+	def script_privateInMeetingChatReceived(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("PrivateIn-meetingChatReceived")
 
 	@script(
@@ -318,7 +319,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad9"
 		]
 	)
-	def script_inMeetingFileUploadCompleted(self, gesture):
+	def script_inMeetingFileUploadCompleted(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("In-meetingFileUploadCompleted")
 
 	@script(
@@ -330,7 +331,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+control+numpad0"
 		]
 	)
-	def script_hostPrivilegeGrantedRevoked(self, gesture):
+	def script_hostPrivilegeGrantedRevoked(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("HostPrivilegeGranted/Revoked")
 
 	@script(
@@ -342,7 +343,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+shift+control+numpad1"
 		]
 	)
-	def script_participantRaisedLoweredHand(self, gesture):
+	def script_participantRaisedLoweredHand(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("ParticipantHasRaised/LoweredHand")
 
 	@script(
@@ -354,7 +355,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+shift+control+numpad2"
 		]
 	)
-	def script_remoteControlPermissionGrantedRevoked(self, gesture):
+	def script_remoteControlPermissionGrantedRevoked(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("RemoteControlPermissionGranted/Revoked")
 
 	@script(
@@ -365,7 +366,7 @@ class AppModule(CoreAppModule):
 			"kb(desktop):NVDA+shift+control+numpad3"
 		]
 	)
-	def script_iMChatReceived(self, gesture):
+	def script_iMChatReceived(self, gesture: inputCore.InputGesture):
 		self.zoomAlertsSettingsChange("IMChatReceived")
 
 	@script(
@@ -373,7 +374,7 @@ class AppModule(CoreAppModule):
 		description=_("Toggles between reporting alerts as usual, beeping for the alert, silencing alerts completely, or custom mode where the user can choose which alerts are reported and which aren't."),
 		gesture="kb:NVDA+Control+Shift+a"
 	)
-	def script_toggleAlertsMode(self, gesture):
+	def script_toggleAlertsMode(self, gesture: inputCore.InputGesture):
 		currentModeLabel = config.conf["zoomEnhancements"]["alertsReportingMode"]
 		currentMode = 3
 		for item in alertModeToLabel.items():
@@ -383,7 +384,7 @@ class AppModule(CoreAppModule):
 		config.conf["zoomEnhancements"]["alertsReportingMode"] = alertModeToLabel[currentMode]
 		ui.message(alertModeToLabel[currentMode])
 
-	def _handleChatMessage(self, alert):
+	def _handleChatMessage(self, alert: str):
 		now = datetime.datetime.now()
 		now = str(now.hour) + ":" + str(now.minute)
 		alert += ", " + now
@@ -397,7 +398,7 @@ class AppModule(CoreAppModule):
 		description=_("Shows Zoom enhancements settings dialog"),
 		gesture="kb:NVDA+z"
 	)
-	def script_showSettingsDialog(self, gesture):
+	def script_showSettingsDialog(self, gesture: inputCore.InputGesture):
 		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, ZoomEnhancementsSettingsPanel)
 
 	@script(
@@ -405,7 +406,7 @@ class AppModule(CoreAppModule):
 		description=_("Shows chat history dialog"),
 		gesture="kb:NVDA+control+h"
 	)
-	def script_showChatHistoryDialog(self, gesture):
+	def script_showChatHistoryDialog(self, gesture: inputCore.InputGesture):
 		gui.mainFrame.prePopup()
 		self.chatHistoryDialog = ChatHistoryDialog(
 			# Translaters: the title of the chat history dialog
