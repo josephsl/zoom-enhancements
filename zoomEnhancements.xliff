@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
-<file id="readme.md" original="https://raw.githubusercontent.com/josephsl/zoom-enhancements/1a8b006d17fe4402950d410b88bdf4a88d1cf9fb/readme.md">
+<file id="readme.md" original="https://raw.githubusercontent.com/josephsl/zoom-enhancements/099626ab4474f8a6d088700002adc6802777ac39/readme.md">
 <skeleton>
 # $(ID:9b75ae3c-27ff-4bcb-9c8b-3efb8db5ea06)
 
@@ -46,7 +46,7 @@ $(ID:f6a4f7bb-a48d-4ef4-95ee-4d37979b6874)
 * $(ID:d5268f04-e9bb-4015-9c42-fac424a51456)
 * $(ID:4b192e96-4f5e-4b1d-872d-48a04894fe9e)
 * $(ID:3eedeb51-0324-4712-a456-bde6c9750b9c)
-* $(ID:ba484451-27dc-474e-94e2-3d461d59d144)
+* $(ID:25ec48a6-7392-4858-bdd4-d31d9d886ee6)
 
 ## $(ID:e0a309e0-9034-4c26-8b68-c49be0fac53a)
 
@@ -342,7 +342,7 @@ $(ID:830c4995-361c-4543-8e1d-218fe5f4d372)
 <source>Choose alerts reporting mode</source>
 </segment>
 </unit>
-<unit id="ba484451-27dc-474e-94e2-3d461d59d144">
+<unit id="25ec48a6-7392-4858-bdd4-d31d9d886ee6">
 <notes>
 <note appliesTo="source">line: 46</note>
 <note appliesTo="source">prefix: * </note>
