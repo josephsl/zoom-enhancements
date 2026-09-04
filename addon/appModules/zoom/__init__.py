@@ -385,7 +385,7 @@ class AppModule(CoreAppModule):
 		ui.message(alertModeToLabel[currentMode])
 
 	def _handleChatMessage(self, alert: str):
-		now = datetime.datetime.now()
+		now = datetime.datetime.now()  # noqa
 		now = str(now.hour) + ":" + str(now.minute)
 		alert += ", " + now
 		self.chatHistoryList.append(alert)
