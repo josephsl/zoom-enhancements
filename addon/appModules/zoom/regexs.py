@@ -20,7 +20,7 @@ publicInMeetingChatReceivedRegEx = re.compile("^From .* to everyone: .*$")
 privateInMeetingChatReceivedRegEx = re.compile("^From .* to me: .*$")
 inMeetingChatReceivedPrefixRegEx = re.compile("^From .* to (everyone|me)$")
 inMeetingFileUploadCompletedRegEx = re.compile(
-	"File \(.*\) sent successfully.")
+	"File \(.*\) sent successfully.")  # noqa
 hostPrivilegeGrantedRevokedRegEx = re.compile(
 	"(^You are the host now$|^.+is the host now$)")
 remoteControlPermissionGrantedRevokedRegEx = re.compile(
