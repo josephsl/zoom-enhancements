@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-08-29 04:09+0000\n"
-"PO-Revision-Date: 2026-08-29 04:10\n"
+"POT-Creation-Date: 2026-09-05 00:50+0000\n"
+"PO-Revision-Date: 2026-09-05 00:51\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -35,13 +35,13 @@ msgstr "Zoom web konferansı aracı için Zoom Geliştirmeleri eklenti ayarları
 #. Translators: the label of the combo box in the settings dialog
 #: addon\appModules\zoom\dialogs.py:30
 msgid "&Alerts reporting mode:"
-msgstr "Uyarı bildirim modu"
+msgstr "Uy&arı bildirim modu"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:40 addon\appModules\zoom\__init__.py:66
 msgid "participant has joined/left meeting"
-msgstr "Katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı"
+msgstr "katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
@@ -53,7 +53,7 @@ msgstr "Katılımcı Toplantı Odasına katıldı / Ayrıldı"
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:44 addon\appModules\zoom\__init__.py:70
 msgid "audio muted by host"
-msgstr "Ses toplantı sahibi tarafından kapatıldı"
+msgstr "ses toplantı sahibi tarafından kapatıldı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
@@ -258,6 +258,6 @@ msgstr "Zoom ve NVDA kullanırken kullanıcı deneyimini geliştirmeyi amaçlaya
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2025.3.3 or later is required."
-msgstr "* NVDA 2025.3.3 veya sonrası sürümler gereklidir."
+msgid "* NVDA 2026.1 (64-bit) or later is required."
+msgstr ""
 
