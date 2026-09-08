@@ -12,6 +12,10 @@ from scriptHandler import script
 import inputCore
 import ui
 import config
+
+# Check for config section registration availability.
+confspecRegistrationAvailable = hasattr(config, "configSections")
+
 from NVDAObjects import NVDAObject
 import addonHandler
 import gui
@@ -24,6 +28,11 @@ from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
 addonHandler.initTranslation()
 
 def initConfiguration():
+	# Register this add-on's settings with NVDA's configuration system.
+	# The below path is taken if this is NVDA 2026.2 and earlier.
+	# NVDA 2026.3 introduces dedicated register/unregister functions and can be invoked from installTasks module.
+	if confspecRegistrationAvailable:
+		return
 	confspec = {
 		"alertsReportingMode": "string(default=Custom)",
 		"ParticipantHasJoined/LeftMeeting": "boolean(default=True)",
