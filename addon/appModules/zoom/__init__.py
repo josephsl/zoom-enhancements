@@ -27,7 +27,7 @@ from .dialogs import ZoomEnhancementsSettingsPanel, ChatHistoryDialog
 
 addonHandler.initTranslation()
 
-def initConfiguration():
+def initConfiguration() -> None:
 	# Register this add-on's settings with NVDA's configuration system.
 	# The below path is taken if this is NVDA 2026.2 and earlier.
 	# NVDA 2026.3 introduces dedicated register/unregister functions and can be invoked from installTasks module.
