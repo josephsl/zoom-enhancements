@@ -12,10 +12,6 @@ from scriptHandler import script
 import inputCore
 import ui
 import config
-
-# Check for config section registration availability.
-confspecRegistrationAvailable = hasattr(config, "configSections")
-
 from NVDAObjects import NVDAObject
 import addonHandler
 import gui
