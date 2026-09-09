@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-05 00:50+0000\n"
-"PO-Revision-Date: 2026-09-05 00:50\n"
+"POT-Creation-Date: 2026-09-09 04:56+0000\n"
+"PO-Revision-Date: 2026-09-09 04:57\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon\appModules\zoom\dialogs.py:19 addon\appModules\zoom\__init__.py:47
+#: addon\appModules\zoom\dialogs.py:19 addon\appModules\zoom\__init__.py:52
 #: buildVars.py:21
 msgid "Zoom Enhancements"
 msgstr "Zoom Enhancements"
@@ -39,25 +39,25 @@ msgstr "Modalità di segnalazione avvisi"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:40 addon\appModules\zoom\__init__.py:66
+#: addon\appModules\zoom\dialogs.py:40 addon\appModules\zoom\__init__.py:71
 msgid "participant has joined/left meeting"
 msgstr "Il partecipante si è unito/ha lasciato la riunione"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:42 addon\appModules\zoom\__init__.py:68
+#: addon\appModules\zoom\dialogs.py:42 addon\appModules\zoom\__init__.py:73
 msgid "participant has joined/left waiting room"
 msgstr "Il partecipante è entrato/ha lasciato la sala d'attesa"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:44 addon\appModules\zoom\__init__.py:70
+#: addon\appModules\zoom\dialogs.py:44 addon\appModules\zoom\__init__.py:75
 msgid "audio muted by host"
 msgstr "Audio disattivato dall'host"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:46 addon\appModules\zoom\__init__.py:72
+#: addon\appModules\zoom\dialogs.py:46 addon\appModules\zoom\__init__.py:77
 msgid "video stopped by host"
 msgstr "Video interrotto dall'host"
 
@@ -68,31 +68,31 @@ msgstr "Condivisione schermo avviata/arrestata da un partecipante"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:50 addon\appModules\zoom\__init__.py:76
+#: addon\appModules\zoom\dialogs.py:50 addon\appModules\zoom\__init__.py:81
 msgid "recording permission granted/revoked"
 msgstr "Autorizzazione alla registrazione concessa/revocata"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:52 addon\appModules\zoom\__init__.py:78
+#: addon\appModules\zoom\dialogs.py:52 addon\appModules\zoom\__init__.py:83
 msgid "public in-meeting chat received"
 msgstr "Ricevuta chat pubblica in riunione"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:54 addon\appModules\zoom\__init__.py:80
+#: addon\appModules\zoom\dialogs.py:54 addon\appModules\zoom\__init__.py:85
 msgid "private in-meeting chat received"
 msgstr "Ricevuta chat privata in riunione"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:56 addon\appModules\zoom\__init__.py:82
+#: addon\appModules\zoom\dialogs.py:56 addon\appModules\zoom\__init__.py:87
 msgid "in-meeting file upload completed"
 msgstr "Caricamento del file durante la riunione completato"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:58 addon\appModules\zoom\__init__.py:84
+#: addon\appModules\zoom\dialogs.py:58 addon\appModules\zoom\__init__.py:89
 msgid "host privilege granted/revoked"
 msgstr "Privilegio host concesso/revocato"
 
@@ -103,13 +103,13 @@ msgstr "Il partecipante ha alzato/abbassato la mano (solo host)"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:62 addon\appModules\zoom\__init__.py:88
+#: addon\appModules\zoom\dialogs.py:62 addon\appModules\zoom\__init__.py:93
 msgid "remote control permission granted/revoked"
 msgstr "Autorizzazione controllo remoto concessa/revocata"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\dialogs.py:64 addon\appModules\zoom\__init__.py:90
+#: addon\appModules\zoom\dialogs.py:64 addon\appModules\zoom\__init__.py:95
 msgid "IM chat received"
 msgstr "Messaggio Chat ricevuto"
 
@@ -119,133 +119,133 @@ msgid "&Choose which alerts should be reported (effective only when custom mode 
 msgstr "Scegli quali avvisi devono essere segnalati (funziona solo quando è selezionata la modalità personalizzata)"
 
 #. Translators: a label for alerts reporting mode
-#: addon\appModules\zoom\__init__.py:53
+#: addon\appModules\zoom\__init__.py:58
 msgid "Report all alerts"
 msgstr "Segnala tutti gli avvisi"
 
 #. Translators: a label for alerts reporting mode
-#: addon\appModules\zoom\__init__.py:55
+#: addon\appModules\zoom\__init__.py:60
 msgid "Beep for alerts"
 msgstr "Bip per avvisi"
 
 #. Translators: a label for alerts reporting mode
-#: addon\appModules\zoom\__init__.py:57
+#: addon\appModules\zoom\__init__.py:62
 msgid "Silence all alerts"
 msgstr "Silenzia tutti gli avvisi"
 
 #. Translators: a label for alerts reporting mode
-#: addon\appModules\zoom\__init__.py:59
+#: addon\appModules\zoom\__init__.py:64
 msgid "Custom"
 msgstr "Personalizzato"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:74
+#: addon\appModules\zoom\__init__.py:79
 msgid "screen sharing started/stopped by participant"
 msgstr "Condivisione schermo avviata/arrestata da un partecipante"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:86
+#: addon\appModules\zoom\__init__.py:91
 msgid "participant has raised/lowered hand"
 msgstr "Il partecipante ha alzato/abbassato la mano (solo host)"
 
 #. Translators: the label of the off state for reporting an alert
-#: addon\appModules\zoom\__init__.py:95
+#: addon\appModules\zoom\__init__.py:100
 msgid "off"
 msgstr "Disattivo"
 
 #. Translators: the label of on state for reporting an alert
-#: addon\appModules\zoom\__init__.py:99
+#: addon\appModules\zoom\__init__.py:104
 msgid "on"
 msgstr "Attivo"
 
 #. Translators: a message reported for the user when toggling reporting Zoom alerts
-#: addon\appModules\zoom\__init__.py:213
+#: addon\appModules\zoom\__init__.py:218
 #, python-brace-format
 msgid "Report {zoomAlert} {alertSetting}"
 msgstr ""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:221
+#: addon\appModules\zoom\__init__.py:226
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:233
+#: addon\appModules\zoom\__init__.py:238
 msgid "Toggles reporting joined / left Waiting Room alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:244
+#: addon\appModules\zoom\__init__.py:249
 msgid "Toggles reporting audio muted by host alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:256
+#: addon\appModules\zoom\__init__.py:261
 msgid "Toggles reporting video stopped by host alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:268
+#: addon\appModules\zoom\__init__.py:273
 msgid "Toggles reporting screen sharing started / stopped by participant alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:280
+#: addon\appModules\zoom\__init__.py:285
 msgid "Toggles reporting recording permission granted / revoked alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:292
+#: addon\appModules\zoom\__init__.py:297
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:304
+#: addon\appModules\zoom\__init__.py:309
 msgid "Toggles reporting private in-meeting chat received alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:316
+#: addon\appModules\zoom\__init__.py:321
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:328
+#: addon\appModules\zoom\__init__.py:333
 msgid "Toggles reporting host privilege granted / revoked alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:340
+#: addon\appModules\zoom\__init__.py:345
 msgid "Toggles reporting participant raised / lowered hand alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:352
+#: addon\appModules\zoom\__init__.py:357
 msgid "Toggles reporting remote control permission granted /revoked alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
-#: addon\appModules\zoom\__init__.py:363
+#: addon\appModules\zoom\__init__.py:368
 msgid "Toggles reporting IM chat received alerts on / off"
 msgstr "Attiva/disattiva la segnalazione degli avvisi inerenti chi si unisce o lascia la riunione"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
-#: addon\appModules\zoom\__init__.py:374
+#: addon\appModules\zoom\__init__.py:379
 msgid "Toggles between reporting alerts as usual, beeping for the alert, silencing alerts completely, or custom mode where the user can choose which alerts are reported and which aren't."
 msgstr "Alterna tra varie modalità di segnalazione degli avvisi; comprende: emissione di un segnale acustico, sopressione della segnalazione avvisi, annuncio in modalità predefinita e modalità personalizzata in cui l'utente può scegliere quali avvisi vengono segnalati e quali no."
 
 #. Translators: a description for a command to show the add-on settings dialog
-#: addon\appModules\zoom\__init__.py:398
+#: addon\appModules\zoom\__init__.py:403
 msgid "Shows Zoom enhancements settings dialog"
 msgstr "Mostra la finestra di dialogo impostazioni miglioramenti zoom"
 
 #. Translators: a description for a command to show chat history dialog
-#: addon\appModules\zoom\__init__.py:406
+#: addon\appModules\zoom\__init__.py:411
 msgid "Shows chat history dialog"
 msgstr "Mostra la finestra di dialogo della cronologia chat"
 
 #. Translaters: the title of the chat history dialog
-#: addon\appModules\zoom\__init__.py:413
+#: addon\appModules\zoom\__init__.py:418
 msgid "Chat history"
 msgstr "Cronologia chat"
 
@@ -258,6 +258,6 @@ msgstr "Un componente aggiuntivo che cerca di migliorare l'esperienza durante l'
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2026.1 (64-bit) or later is required."
+msgid "* Added compatibility with add-on settings registration mechanics in NVDA 2026.3."
 msgstr ""
 
