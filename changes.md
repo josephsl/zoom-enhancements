@@ -2,6 +2,10 @@
 
 This page lists the complete changelog for Zoom Enhancements add-on releases.
 
+## Version 26.09.1
+
+* Added compatibility with add-on settings registration mechanics in NVDA 2026.3.
+
 ## Version 26.05
 
 * NVDA 2025.3.3 or later is required.

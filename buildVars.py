@@ -26,7 +26,7 @@ addon_info = AddonInfo(
 	addon_version="26.09",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* NVDA 2025.3.3 or later is required."""),
+	addon_changelog=_("""* Added compatibility with add-on settings registration mechanics in NVDA 2026.3."""),
 	# Author(s)
 	addon_author="Joseph Lee <joseph.lee22590@gmail.com> (formerly Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>)",
 	# URL for the add-on documentation support
