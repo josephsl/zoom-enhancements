@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-09 04:56+0000\n"
-"PO-Revision-Date: 2026-09-09 04:56\n"
+"POT-Creation-Date: 2026-09-19 02:49+0000\n"
+"PO-Revision-Date: 2026-09-19 02:49\n"
 "Last-Translator: \n"
 "Language-Team: Bosnian\n"
 "Language: bs_BA\n"
@@ -258,6 +258,6 @@ msgstr "Dodatak koji za cilj ima poboljšati iskustvo korištenja Zooma s NVDA."
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* Added compatibility with add-on settings registration mechanics in NVDA 2026.3."
+msgid "* NVDA 2026.1 (64-bit) or later is required."
 msgstr ""
 
