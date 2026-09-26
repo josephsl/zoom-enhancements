@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-19 02:49+0000\n"
-"PO-Revision-Date: 2026-09-19 02:50\n"
+"POT-Creation-Date: 2026-09-26 01:26+0000\n"
+"PO-Revision-Date: 2026-09-26 01:28\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -30,82 +30,82 @@ msgstr "Улучшения Zoom"
 #. Translators: description for the settings dialog
 #: addon\appModules\zoom\dialogs.py:21
 msgid "Configures Zoom Enhancements add-on settings for the Zoom web conference tool."
-msgstr ""
+msgstr "Настраивает параметры дополнения улучшений Zoom для инструмента веб-конференций Zoom."
 
 #. Translators: the label of the combo box in the settings dialog
 #: addon\appModules\zoom\dialogs.py:30
 msgid "&Alerts reporting mode:"
-msgstr "Режим оповещений"
+msgstr "Режим формирования &уведомлений:"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:40 addon\appModules\zoom\__init__.py:71
 msgid "participant has joined/left meeting"
-msgstr "Участник подключился / покинул конференцию"
+msgstr "участник подключился / покинул конференцию"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:42 addon\appModules\zoom\__init__.py:73
 msgid "participant has joined/left waiting room"
-msgstr "Участник подключился / покинул зал ожидания"
+msgstr "участник подключился / покинул зал ожидания"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:44 addon\appModules\zoom\__init__.py:75
 msgid "audio muted by host"
-msgstr "Звук отключён организатором"
+msgstr "звук отключён организатором"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:46 addon\appModules\zoom\__init__.py:77
 msgid "video stopped by host"
-msgstr "Организатор остановил воспроизведение видео"
+msgstr "организатор остановил воспроизведение видео"
 
 #. Translators: a label of a checkbox in the settings dialog
 #: addon\appModules\zoom\dialogs.py:48
 msgid "screen sharing started/stopped by a participant"
-msgstr "Участник запустил/остановил демонстрацию экрана"
+msgstr "участник запустил/остановил демонстрацию экрана"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:50 addon\appModules\zoom\__init__.py:81
 msgid "recording permission granted/revoked"
-msgstr "Привилегия на запись предоставлена/отозвана"
+msgstr "привилегия на запись предоставлена/отозвана"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:52 addon\appModules\zoom\__init__.py:83
 msgid "public in-meeting chat received"
-msgstr "Получено общее сообщение в чате конференции"
+msgstr "получено общее сообщение в чате конференции"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:54 addon\appModules\zoom\__init__.py:85
 msgid "private in-meeting chat received"
-msgstr "Получено личное сообщение в чате конференции"
+msgstr "получено личное сообщение в чате конференции"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:56 addon\appModules\zoom\__init__.py:87
 msgid "in-meeting file upload completed"
-msgstr "Отправка файла в конференцию завершена"
+msgstr "отправка файла в конференцию завершена"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:58 addon\appModules\zoom\__init__.py:89
 msgid "host privilege granted/revoked"
-msgstr "Привилегия организатора предоставлена/отозвана"
+msgstr "привилегия организатора предоставлена/отозвана"
 
 #. Translators: a label of a checkbox in the settings dialog
 #: addon\appModules\zoom\dialogs.py:60
 msgid "participant has raised/lowered hand (host only)"
-msgstr "Участник поднял/опустил руку (только для организатора)"
+msgstr "участник поднял/опустил руку (только для организатора)"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:62 addon\appModules\zoom\__init__.py:93
 msgid "remote control permission granted/revoked"
-msgstr "Разрешение на удалённое управление предоставлено/отозвано"
+msgstr "разрешение на дистанционное управление предоставлено/отозвано"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
@@ -141,12 +141,12 @@ msgstr "Пользовательский режим"
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:79
 msgid "screen sharing started/stopped by participant"
-msgstr "Участник запустил/остановил демонстрацию экрана"
+msgstr "участник запустил/остановил демонстрацию экрана"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:91
 msgid "participant has raised/lowered hand"
-msgstr "Участник поднял/опустил руку (только для организатора)"
+msgstr "участник поднял/опустил руку (только для организатора)"
 
 #. Translators: the label of the off state for reporting an alert
 #: addon\appModules\zoom\__init__.py:100
@@ -162,7 +162,7 @@ msgstr "включено"
 #: addon\appModules\zoom\__init__.py:218
 #, python-brace-format
 msgid "Report {zoomAlert} {alertSetting}"
-msgstr ""
+msgstr "Объявлять {zoomAlert} {alertSetting}"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:226
@@ -259,5 +259,5 @@ msgstr "Это дополнение упрощает использование 
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid "* NVDA 2026.1 (64-bit) or later is required."
-msgstr ""
+msgstr "* Требуется NVDA 2026.1 (64-бит) или выше."
 
