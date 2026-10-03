@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-09-26 01:26+0000\n"
-"PO-Revision-Date: 2026-09-26 01:28\n"
+"PO-Revision-Date: 2026-09-29 13:01\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -237,7 +237,7 @@ msgstr "Переключает режимы оповещений между об
 #. Translators: a description for a command to show the add-on settings dialog
 #: addon\appModules\zoom\__init__.py:403
 msgid "Shows Zoom enhancements settings dialog"
-msgstr "Показывает диалоговое окно настроек дополнения"
+msgstr "Показывает диалог настроек дополнения"
 
 #. Translators: a description for a command to show chat history dialog
 #: addon\appModules\zoom\__init__.py:411
