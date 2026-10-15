@@ -4,13 +4,10 @@
 # Registers add-on config spec/settings blueprint.
 
 import config
-confspecRegistrationAvailable = hasattr(config, "configSections")
 
 def onInstall() -> None:
 	# Register this add-on's settings with NVDA's configuration system.
-	# If running NVDA 2026.3, register the confspec here, otherwise do it from the app module.
-	if not confspecRegistrationAvailable:
-		return
+	# The app module version serves as a fallback in case custom sections data is gone.
 	confspec = {
 		"alertsReportingMode": "string(default=Custom)",
 		"ParticipantHasJoined/LeftMeeting": "boolean(default=True)",
