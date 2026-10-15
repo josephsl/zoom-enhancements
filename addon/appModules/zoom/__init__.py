@@ -25,8 +25,8 @@ addonHandler.initTranslation()
 
 def initConfiguration() -> None:
 	# Register this add-on's settings with NVDA's configuration system.
-	# The below path is taken if this is NVDA 2026.2 and earlier or the add-on confspec was not registered.
-	# NVDA 2026.3 introduces dedicated register/unregister functions and can be invoked from installTasks module.
+	# The below path is taken if the add-on confspec was not registered properly
+	# at add-on install time or missing.
 	if "zoomEnhancements" in config.conf.spec:
 		return
 	confspec = {
@@ -45,7 +45,7 @@ def initConfiguration() -> None:
 		"RemoteControlPermissionGranted/Revoked": "boolean(default=True)",
 		"IMChatReceived": "boolean(default=True)",
 	}
-	config.conf.spec["zoomEnhancements"] = confspec
+	config.configSections.registerSection("zoomEnhancements", confspec)
 
 
 # Translators: the name of the add-on category in input gestures
