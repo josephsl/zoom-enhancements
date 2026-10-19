@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-26 01:26+0000\n"
-"PO-Revision-Date: 2026-10-07 03:12\n"
+"POT-Creation-Date: 2026-10-19 01:58+0000\n"
+"PO-Revision-Date: 2026-10-19 01:58\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -30,7 +30,7 @@ msgstr "Zoom-Verbesserungen"
 #. Translators: description for the settings dialog
 #: addon\appModules\zoom\dialogs.py:21
 msgid "Configures Zoom Enhancements add-on settings for the Zoom web conference tool."
-msgstr ""
+msgstr "Konfiguriert die Einstellungen der Erweiterung \"Zoom Verbesserungen für die Webkonferenz-Software Zoom."
 
 #. Translators: the label of the combo box in the settings dialog
 #: addon\appModules\zoom\dialogs.py:30
@@ -162,7 +162,7 @@ msgstr "ein"
 #: addon\appModules\zoom\__init__.py:218
 #, python-brace-format
 msgid "Report {zoomAlert} {alertSetting}"
-msgstr ""
+msgstr "Ansage von {zoomAlert} {alertSetting}"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:226
@@ -258,6 +258,6 @@ msgstr "Mit dieser Erweiterung wird das Erlebnis mit Zoom und NVDA verbessert"
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2026.1 (64-bit) or later is required."
+msgid "* NVDA 2026.3 or later is required."
 msgstr ""
 
