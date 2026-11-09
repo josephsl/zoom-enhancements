@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-10-19 01:58+0000\n"
-"PO-Revision-Date: 2026-10-27 08:22\n"
+"POT-Creation-Date: 2026-11-09 03:12+0000\n"
+"PO-Revision-Date: 2026-11-09 03:19\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -35,19 +35,19 @@ msgstr "Zoom web konferansı aracı için Zoom Geliştirmeleri eklenti ayarları
 #. Translators: the label of the combo box in the settings dialog
 #: addon\appModules\zoom\dialogs.py:30
 msgid "&Alerts reporting mode:"
-msgstr "Uy&arı bildirim modu"
+msgstr "uy&arı bildirim modu:"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:40 addon\appModules\zoom\__init__.py:71
 msgid "participant has joined/left meeting"
-msgstr "katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı"
+msgstr "katılımcı toplantıya katıldı/toplantıdan ayrıldı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:42 addon\appModules\zoom\__init__.py:73
 msgid "participant has joined/left waiting room"
-msgstr "Katılımcı Toplantı Odasına katıldı / Ayrıldı"
+msgstr "katılımcı toplantı odasına katıldı / ayrıldı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
@@ -59,53 +59,53 @@ msgstr "ses toplantı sahibi tarafından kapatıldı"
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:46 addon\appModules\zoom\__init__.py:77
 msgid "video stopped by host"
-msgstr "Video toplantı sahibi Tarafından Durduruldu"
+msgstr "video toplantı sahibi tarafından durduruldu"
 
 #. Translators: a label of a checkbox in the settings dialog
 #: addon\appModules\zoom\dialogs.py:48
 msgid "screen sharing started/stopped by a participant"
-msgstr "Bir katılımcı tarafından ekran Paylaşımı Başlatıldı/Durduruldu"
+msgstr "bir katılımcı tarafından ekran paylaşımı başlatıldı/durduruldu"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:50 addon\appModules\zoom\__init__.py:81
 msgid "recording permission granted/revoked"
-msgstr "Kayıt İzni Verildi/İptal Edildi"
+msgstr "kayıt izni verildi/iptal edildi"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:52 addon\appModules\zoom\__init__.py:83
 msgid "public in-meeting chat received"
-msgstr "Herkese Açık Toplantı İçi Sohbet mesajı Alındı"
+msgstr "herkese açık toplantı içi sohbet mesajı alındı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:54 addon\appModules\zoom\__init__.py:85
 msgid "private in-meeting chat received"
-msgstr "Özel Toplantı İçi Sohbet mesajı Alındı"
+msgstr "özel toplantı içi sohbet mesajı alındı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:56 addon\appModules\zoom\__init__.py:87
 msgid "in-meeting file upload completed"
-msgstr "Toplantı İçi Dosya Yüklemesi Tamamlandı"
+msgstr "toplantı içi dosya yükleme işlemi tamamlandı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:58 addon\appModules\zoom\__init__.py:89
 msgid "host privilege granted/revoked"
-msgstr "Sunum izni Verildi / İptal Edildi"
+msgstr "sunucu ayrıcalığı verildi/geri alındı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #: addon\appModules\zoom\dialogs.py:60
 msgid "participant has raised/lowered hand (host only)"
-msgstr "Katılımcı Elini Kaldırdı/İndirdi (Yalnızca Toplantı Sahibi)"
+msgstr "katılımcı elini kaldırdı/indirdi (yalnızca toplantı sahibi)"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\dialogs.py:62 addon\appModules\zoom\__init__.py:93
 msgid "remote control permission granted/revoked"
-msgstr "Uzaktan Kontrol İzni Verildi / İptal Edildi"
+msgstr "uzaktan kontrol izni verildi/geri alındı"
 
 #. Translators: a label of a checkbox in the settings dialog
 #. Translators: a message reported for the user when toggling reporting a spicific alert
@@ -141,12 +141,12 @@ msgstr "Özel"
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:79
 msgid "screen sharing started/stopped by participant"
-msgstr "Bir katılımcı tarafından ekran Paylaşımı Başlatıldı/Durduruldu"
+msgstr "ekran paylaşımı katılımcı tarafından başlatıldı/durduruldu."
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:91
 msgid "participant has raised/lowered hand"
-msgstr "Katılımcı Elini Kaldırdı/İndirdi (Yalnızca Toplantı Sahibi)"
+msgstr "katılımcı elini kaldırdı/indirdi"
 
 #. Translators: the label of the off state for reporting an alert
 #: addon\appModules\zoom\__init__.py:100
@@ -192,7 +192,7 @@ msgstr "Ekran paylaşımı uyarılarının bildirimini açıp kapatır"
 #. Translators: a description for a command to toggle reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:285
 msgid "Toggles reporting recording permission granted / revoked alerts on / off"
-msgstr "Kayıt İzni Verildi / İptal Edildi uyrılarının bildirimini açıp kapatır"
+msgstr "Kayıt İzni Verildi / İptal Edildi uyarılarının bildirimini açıp kapatır"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 #: addon\appModules\zoom\__init__.py:297
