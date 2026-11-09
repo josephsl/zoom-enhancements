@@ -9,9 +9,21 @@ from gui.nvdaControls import DPIScaledDialog, CustomCheckListBox
 import wx
 import config
 import addonHandler
+import webbrowser
+from . import regexs
 
 
 addonHandler.initTranslation()
+
+
+def findLinks(text: str) -> list[str]:
+	"""Returns the links in a chat message, in order and without duplicates."""
+	links = []
+	for match in regexs.linkRegEx.finditer(text):
+		link = match.group(0).rstrip(".,;:!?)]}")
+		if link not in links:
+			links.append(link)
+	return links
 
 
 class ZoomEnhancementsSettingsPanel(gui.settingsDialogs.SettingsPanel):
@@ -123,7 +135,12 @@ class ChatHistoryDialog(DPIScaledDialog):
 		self.itemList = wx.ListBox(self)
 		if items:
 			self.itemList.InsertItems(items, 0)
+		self.itemList.Bind(wx.EVT_LISTBOX, self.onSelectionChange)
 		sHelper.addItem(self.itemList)
+		# One button per link in the selected message.
+		self.linkButtonsSizer = wx.BoxSizer(wx.VERTICAL)
+		self.linkButtons = []
+		sHelper.addItem(self.linkButtonsSizer, flag=wx.EXPAND)
 		sHelper.addDialogDismissButtons(wx.CLOSE, True)
 		mainSizer.Add(sHelper.sizer, border=guiHelper.BORDER_FOR_DIALOGS,
 					  flag=wx.ALL | wx.EXPAND, proportion=1)
@@ -132,6 +149,35 @@ class ChatHistoryDialog(DPIScaledDialog):
 		self.SetMinSize(self.scaleSize(self.MIN_SIZE))
 		self.SetSize(self.scaleSize(self.INITIAL_SIZE))
 		self.CentreOnScreen()
+
+	def onSelectionChange(self, evt):
+		self.updateLinkButtons()
+
+	def updateLinkButtons(self):
+		for button in self.linkButtons:
+			button.Destroy()
+		self.linkButtons = []
+		self.linkButtonsSizer.Clear()
+		selection = self.itemList.GetSelection()
+		# Keep link buttons right after the message list in tab order, before Close.
+		previous = self.itemList
+		if selection != wx.NOT_FOUND:
+			for link in findLinks(self.itemList.GetString(selection)):
+				# The button label is the link itself.
+				# Escape ampersands so wx does not treat them as access keys.
+				button = wx.Button(self, label=link.replace("&", "&&"))
+				button.Bind(wx.EVT_BUTTON, lambda evt, link=link: self.openLink(link))
+				self.linkButtonsSizer.Add(button, flag=wx.EXPAND | wx.TOP, border=guiHelper.SPACE_BETWEEN_BUTTONS_VERTICAL)
+				button.MoveAfterInTabOrder(previous)
+				previous = button
+				self.linkButtons.append(button)
+		self.Layout()
+
+	def openLink(self, link: str):
+		if link.lower().startswith("www."):
+			link = "https://" + link
+		webbrowser.open(link)
+		self.Close()
 
 	INITIAL_SIZE = (800, 480)
 	MIN_SIZE = (470, 240)
