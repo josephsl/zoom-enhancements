@@ -27,3 +27,6 @@ remoteControlPermissionGrantedRevokedRegEx = re.compile(
 	"^You can control .+'s screen$")
 raisedLoweredHandRegEx = re.compile("^.* (has )?(raised|lowered) hand$")
 iMChatReceivedRegEx = re.compile(r"^.+, \d+ unread messages?")
+# Links in chat messages (http, https, or bare www. addresses).
+# Trailing punctuation such as a period or closing bracket is trimmed separately.
+linkRegEx = re.compile(r"(?:https?://|www\.)[^\s<>\"']+", re.IGNORECASE)
